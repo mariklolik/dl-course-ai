@@ -27,14 +27,9 @@ class SGD(Optimizer):
             self.state['m'] = [np.zeros_like(param) for param in parameters]
 
         for param, grad, m in zip(parameters, gradients, self.state['m']):
-            """
-            your code here ｀、ヽ｀、ヽ(ノ＞＜)ノ ヽ｀☂｀、ヽ
-              - update momentum variable (m)
-              - update parameter variable (param)
-            hint: consider using np.add(..., out=m) for in place addition,
-              i.e. we need to change original array, not its copy
-            """
-            pass
+            g = grad + self.weight_decay * param
+            np.add(self.momentum * m, g, out=m)
+            param -= self.lr * m
 
 
 class Adam(Optimizer):
@@ -69,12 +64,9 @@ class Adam(Optimizer):
         self.state['t'] += 1
         t = self.state['t']
         for param, grad, m, v in zip(parameters, gradients, self.state['m'], self.state['v']):
-            """
-            your code here ｀、ヽ｀、ヽ(ノ＞＜)ノ ヽ｀☂｀、ヽ
-              - update first moment variable (m)
-              - update second moment variable (v)
-              - update parameter variable (param)
-            hint: consider using np.add(..., out=m) for in place addition,
-              i.e. we need to change original array, not its copy
-            """
-            pass
+            g = grad + self.weight_decay * param
+            np.add(self.beta1 * m, (1 - self.beta1) * g, out=m)
+            np.add(self.beta2 * v, (1 - self.beta2) * g ** 2, out=v)
+            m_hat = m / (1 - self.beta1 ** t)
+            v_hat = v / (1 - self.beta2 ** t)
+            param -= self.lr * m_hat / (np.sqrt(v_hat) + self.eps)
