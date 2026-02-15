@@ -4,15 +4,7 @@ from .base import Module
 
 
 class Linear(Module):
-    """
-    Applies linear (affine) transformation of data: y = x W^T + b
-    """
     def __init__(self, in_features: int, out_features: int, bias: bool = True):
-        """
-        :param in_features: input vector features
-        :param out_features: output vector features
-        :param bias: whether to use additive bias
-        """
         super().__init__()
         self.in_features = in_features
         self.out_features = out_features
@@ -23,28 +15,15 @@ class Linear(Module):
         self.grad_bias = np.zeros_like(self.bias) if bias else None
 
     def compute_output(self, input: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of shape (batch_size, in_features)
-        :return: array of shape (batch_size, out_features)
-        """
         output = input @ self.weight.T
         if self.bias is not None:
             output += self.bias
         return output
 
     def compute_grad_input(self, input: np.ndarray, grad_output: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of shape (batch_size, in_features)
-        :param grad_output: array of shape (batch_size, out_features)
-        :return: array of shape (batch_size, in_features)
-        """
         return grad_output @ self.weight
 
     def update_grad_parameters(self, input: np.ndarray, grad_output: np.ndarray):
-        """
-        :param input: array of shape (batch_size, in_features)
-        :param grad_output: array of shape (batch_size, out_features)
-        """
         self.grad_weight += grad_output.T @ input
         if self.bias is not None:
             self.grad_bias += grad_output.sum(axis=0)
@@ -73,16 +52,7 @@ class Linear(Module):
 
 
 class BatchNormalization(Module):
-    """
-    Applies batch normalization transformation
-    """
     def __init__(self, num_features: int, eps: float = 1e-5, momentum: float = 0.1, affine: bool = True):
-        """
-        :param num_features:
-        :param eps:
-        :param momentum:
-        :param affine: whether to use trainable affine parameters
-        """
         super().__init__()
         self.eps = eps
         self.momentum = momentum
@@ -105,10 +75,6 @@ class BatchNormalization(Module):
         self.norm_input = None
 
     def compute_output(self, input: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of shape (batch_size, num_features)
-        :return: array of shape (batch_size, num_features)
-        """
         if self.training:
             B = input.shape[0]
             self.mean = input.mean(axis=0)
@@ -130,11 +96,6 @@ class BatchNormalization(Module):
         return output
 
     def compute_grad_input(self, input: np.ndarray, grad_output: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of shape (batch_size, num_features)
-        :param grad_output: array of shape (batch_size, num_features)
-        :return: array of shape (batch_size, num_features)
-        """
         if self.training:
             B = input.shape[0]
             if self.affine:
@@ -153,10 +114,6 @@ class BatchNormalization(Module):
                 return grad_output / np.sqrt(self.running_var + self.eps)
 
     def update_grad_parameters(self, input: np.ndarray, grad_output: np.ndarray):
-        """
-        :param input: array of shape (batch_size, num_features)
-        :param grad_output: array of shape (batch_size, num_features)
-        """
         if self.affine:
             if self.training:
                 self.grad_weight += (grad_output * self.norm_input).sum(axis=0)
@@ -182,9 +139,6 @@ class BatchNormalization(Module):
 
 
 class Dropout(Module):
-    """
-    Applies dropout transformation
-    """
     def __init__(self, p=0.5):
         super().__init__()
         assert 0 <= p < 1
@@ -192,10 +146,6 @@ class Dropout(Module):
         self.mask = None
 
     def compute_output(self, input: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of an arbitrary size
-        :return: array of the same size
-        """
         if self.training:
             self.mask = (np.random.random(input.shape) >= self.p).astype(input.dtype)
             return self.mask * input / (1 - self.p)
@@ -203,11 +153,6 @@ class Dropout(Module):
             return input
 
     def compute_grad_input(self, input: np.ndarray, grad_output: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of an arbitrary size
-        :param grad_output: array of the same size
-        :return: array of the same size
-        """
         if self.training:
             return self.mask * grad_output / (1 - self.p)
         else:
@@ -218,29 +163,17 @@ class Dropout(Module):
 
 
 class Sequential(Module):
-    """
-    Container for consecutive application of modules
-    """
     def __init__(self, *args):
         super().__init__()
         self.modules = list(args)
 
     def compute_output(self, input: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of size matching the input size of the first layer
-        :return: array of size matching the output size of the last layer
-        """
         output = input
         for module in self.modules:
             output = module(output)
         return output
 
     def compute_grad_input(self, input: np.ndarray, grad_output: np.ndarray) -> np.ndarray:
-        """
-        :param input: array of size matching the input size of the first layer
-        :param grad_output: array of size matching the output size of the last layer
-        :return: array of size matching the input size of the first layer
-        """
         inputs = [input]
         for module in self.modules[:-1]:
             inputs.append(module.output)

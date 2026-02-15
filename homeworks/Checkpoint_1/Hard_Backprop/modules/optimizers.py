@@ -4,17 +4,8 @@ from .base import Module, Optimizer
 
 
 class SGD(Optimizer):
-    """
-    Optimizer implementing stochastic gradient descent with momentum
-    """
     def __init__(self, module: Module, lr: float = 1e-2, momentum: float = 0.0,
                  weight_decay: float = 0.0):
-        """
-        :param module: neural network containing parameters to optimize
-        :param lr: learning rate
-        :param momentum: momentum coefficient (alpha)
-        :param weight_decay: weight decay (L2 penalty)
-        """
         super().__init__(module)
         self.lr = lr
         self.momentum = momentum
@@ -33,19 +24,9 @@ class SGD(Optimizer):
 
 
 class Adam(Optimizer):
-    """
-    Optimizer implementing Adam
-    """
     def __init__(self, module: Module, lr: float = 1e-3,
                  betas: Tuple[float, float] = (0.9, 0.999),
                  eps: float = 1e-8, weight_decay: float = 0.0):
-        """
-        :param module: neural network containing parameters to optimize
-        :param lr: learning rate
-        :param betas: Adam beta1 and beta2
-        :param eps: Adam eps
-        :param weight_decay: weight decay (L2 penalty)
-        """
         super().__init__(module)
         self.lr = lr
         self.beta1 = betas[0]
