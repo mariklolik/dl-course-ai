@@ -182,7 +182,7 @@ class Optimizer(ABC):
         :param module: neural network containing parameters to optimize
         """
         self.module = module
-        self.state = {}  # storing current state of optimizer
+        self.state = {}
 
     def zero_grad(self):
         """
