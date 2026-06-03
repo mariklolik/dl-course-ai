@@ -174,3 +174,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# MT translator submission artifacts (large weights/zips are never committed)
+mt/weights/
+mt/build_*/
+mt/*.zip
+mt/output.json
+mt/refs.json
+/input.pickle

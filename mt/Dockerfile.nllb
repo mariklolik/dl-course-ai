@@ -1,0 +1,17 @@
+# NLLB-200 English->Russian submission.
+# Yandex-provided base (pytorch preinstalled, builds fast, no extra auth).
+# Replace with any public CUDA+PyTorch image if building outside the contest.
+FROM cr.yandex/crp2q2b12lka2f8enigt/pytorch/pytorch:2.8.0-cuda12.6-cudnn9-runtime
+
+RUN apt-get update && apt-get install -y build-essential && rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install --no-cache-dir \
+    "transformers==5.5.0" \
+    "accelerate" \
+    "sentencepiece" \
+    "sacremoses"
+
+WORKDIR /workspace
+COPY . .
+
+ENTRYPOINT ["python3", "solution.py"]

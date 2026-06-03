@@ -1,0 +1,7 @@
+[
+  {"src": "The weather was beautiful, so we decided to walk to the river and have a picnic on the grass.", "ref": "Погода была прекрасная, поэтому мы решили прогуляться до реки и устроить пикник на траве."},
+  {"src": "If you want to fork a GitHub project, the \"Fork\" button at the top of the page will help you do exactly that.", "ref": "Если вы хотите сделать форк проекта на GitHub, кнопка «Fork» вверху страницы поможет вам именно в этом."},
+  {"src": "She said in the interview that the new model was trained on millions of examples and still fits on a single laptop.", "ref": "В интервью она сказала, что новая модель обучена на миллионах примеров и при этом помещается на одном ноутбуке."},
+  {"src": "Scientists have discovered that the small mammal can survive for weeks without water in the desert.", "ref": "Учёные обнаружили, что это небольшое млекопитающее может неделями выживать в пустыне без воды."},
+  {"src": "Please remember to save your work before closing the application, otherwise the latest changes will be lost.", "ref": "Не забудьте сохранить работу перед закрытием приложения, иначе последние изменения будут потеряны."}
+]
