@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+output_dir/
+data/
+venv/
+**/final/
+**/checkpoint-*/

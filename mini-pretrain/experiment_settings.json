@@ -1,0 +1,106 @@
+{
+  "throughput_probe": "compile",
+  "learning_rate_probe": "lr3e4",
+  "throughput_selection": "post-warmup token slots/s adjusted for three cold steps within 900s; peak <75GB",
+  "learning_rate_selection": "minimum eval loss on first 128 validation rows after 80 steps",
+  "compile_cache": "isolated per full run",
+  "experiments": {
+    "baseline": {
+      "per_device_train_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "torch_compile": true,
+      "tf32": true,
+      "optim": "adamw_torch_fused",
+      "learning_rate": 5e-05,
+      "warmup_steps": 200,
+      "lr_scheduler_type": "constant_with_warmup"
+    },
+    "constant": {
+      "per_device_train_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "torch_compile": true,
+      "tf32": true,
+      "optim": "adamw_torch_fused",
+      "learning_rate": 0.0003,
+      "warmup_steps": 20,
+      "lr_scheduler_type": "constant_with_warmup"
+    },
+    "cosine": {
+      "per_device_train_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "torch_compile": true,
+      "tf32": true,
+      "optim": "adamw_torch_fused",
+      "learning_rate": 0.0003,
+      "warmup_steps": 20,
+      "lr_scheduler_type": "cosine",
+      "scheduler_steps": 3400
+    }
+  },
+  "probe_design": [
+    {
+      "name": "b8",
+      "batch_size": 8
+    },
+    {
+      "name": "b16",
+      "batch_size": 16
+    },
+    {
+      "name": "b32",
+      "batch_size": 32
+    },
+    {
+      "name": "b48",
+      "batch_size": 48
+    },
+    {
+      "name": "b64",
+      "batch_size": 64
+    },
+    {
+      "name": "b16a2",
+      "batch_size": 16,
+      "accumulation": 2
+    },
+    {
+      "name": "unfused",
+      "batch_size": 16,
+      "fused": false
+    },
+    {
+      "name": "compile",
+      "batch_size": 16,
+      "compile": true
+    },
+    {
+      "name": "tf32off",
+      "batch_size": 16,
+      "tf32": false
+    },
+    {
+      "name": "fp16",
+      "batch_size": 16,
+      "dtype": "fp16",
+      "fp32_weights": true
+    },
+    {
+      "name": "lr5e5",
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "steps": 80
+    },
+    {
+      "name": "lr3e4",
+      "batch_size": 16,
+      "learning_rate": 0.0003,
+      "steps": 80
+    },
+    {
+      "name": "lr1e3",
+      "batch_size": 16,
+      "learning_rate": 0.001,
+      "steps": 80
+    }
+  ]
+}

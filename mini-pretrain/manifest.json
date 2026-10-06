@@ -1,0 +1,12 @@
+{
+  "dataset": "wikimedia/wikipedia",
+  "config": "20231101.ru",
+  "rows": 1945063,
+  "fingerprint": "4e96921cfbae4238",
+  "validation_size": 5000,
+  "validation_ids_sha256": "163d2359a580d6d3ce420adb22016e22f1e8450a9e18ef4244b32b45c2e40e28",
+  "first_train_id": "9650",
+  "first_eval_id": "7",
+  "max_length": 512,
+  "tokenizer": "ai-forever/rugpt3small_based_on_gpt2"
+}

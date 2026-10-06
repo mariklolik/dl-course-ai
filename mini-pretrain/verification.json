@@ -1,0 +1,40 @@
+{
+  "source_skeleton_sha256": "09866c0e39f699ebedcaf96080ba602e1a0315ee2b22f06430e410a3184c5381",
+  "source_skeleton_url": "https://drive.google.com/file/d/1vPmNU45wi8DPVPF_abDLZHgEhtjWKqor/view",
+  "model_config_matches_skeleton": true,
+  "tests": "3 passed in 6.75s",
+  "test_device": "CPU on training server",
+  "max_training_seconds": 900,
+  "max_length": 512,
+  "validation_size": 5000,
+  "original_skeleton_regressions": "2 failed as expected: missing tokenization and parquet implementation",
+  "pip_check": "No broken requirements found",
+  "flash_attention_smoke_shape": [
+    2,
+    16,
+    4,
+    128
+  ],
+  "data_audit": {
+    "verified_rows": 1945063,
+    "checked_positions": [
+      0,
+      4999,
+      5000,
+      1945062
+    ],
+    "eval_active_tokens": 2155967,
+    "eval_token_slots": 2555000,
+    "eval_padding_fraction": 0.1561772994129158,
+    "order_and_tokenization_match_source": true
+  },
+  "environment": {
+    "torch": "2.6.0+cu118",
+    "transformers": "4.52.0",
+    "datasets": "3.6.0",
+    "accelerate": "1.6.0",
+    "flash-attn": "2.7.3",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "cuda": "11.8"
+  }
+}

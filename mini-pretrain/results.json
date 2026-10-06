@@ -1,0 +1,111 @@
+{
+  "baseline": {
+    "initial": {
+      "eval_loss": 11.217737197875977,
+      "eval_model_preparation_time": 1.3667,
+      "eval_runtime": 57.4586,
+      "eval_samples_per_second": 87.019,
+      "eval_steps_per_second": 5.447,
+      "num_input_tokens_seen": 0
+    },
+    "final": {
+      "eval_loss": 5.834011554718018,
+      "eval_model_preparation_time": 0.0037,
+      "eval_runtime": 41.1597,
+      "eval_samples_per_second": 121.478,
+      "eval_steps_per_second": 7.605,
+      "epoch": 0.025178550810694904,
+      "num_input_tokens_seen": 25010176
+    },
+    "perplexity": 341.72678882546603,
+    "training_seconds": 900.266306206584,
+    "steps": 3053,
+    "token_slots": 25010176,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "peak_memory_gb": 18.95618816,
+    "parameters": 960881664,
+    "settings": {
+      "per_device_train_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "torch_compile": true,
+      "tf32": true,
+      "optim": "adamw_torch_fused",
+      "learning_rate": 5e-05,
+      "warmup_steps": 200,
+      "lr_scheduler_type": "constant_with_warmup"
+    }
+  },
+  "constant": {
+    "initial": {
+      "eval_loss": 11.217737197875977,
+      "eval_model_preparation_time": 1.1931,
+      "eval_runtime": 58.8296,
+      "eval_samples_per_second": 84.991,
+      "eval_steps_per_second": 5.32,
+      "num_input_tokens_seen": 0
+    },
+    "final": {
+      "eval_loss": 4.362391471862793,
+      "eval_model_preparation_time": 0.0033,
+      "eval_runtime": 41.2045,
+      "eval_samples_per_second": 121.346,
+      "eval_steps_per_second": 7.596,
+      "epoch": 0.025162056509475977,
+      "num_input_tokens_seen": 24993792
+    },
+    "perplexity": 78.44450811827849,
+    "training_seconds": 900.2646032273769,
+    "steps": 3051,
+    "token_slots": 24993792,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "peak_memory_gb": 18.955856384,
+    "parameters": 960881664,
+    "settings": {
+      "per_device_train_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "torch_compile": true,
+      "tf32": true,
+      "optim": "adamw_torch_fused",
+      "learning_rate": 0.0003,
+      "warmup_steps": 20,
+      "lr_scheduler_type": "constant_with_warmup"
+    }
+  },
+  "cosine": {
+    "initial": {
+      "eval_loss": 11.217737197875977,
+      "eval_model_preparation_time": 1.3189,
+      "eval_runtime": 57.544,
+      "eval_samples_per_second": 86.89,
+      "eval_steps_per_second": 5.439,
+      "num_input_tokens_seen": 0
+    },
+    "final": {
+      "eval_loss": 4.485842227935791,
+      "eval_model_preparation_time": 0.0035,
+      "eval_runtime": 41.2368,
+      "eval_samples_per_second": 121.251,
+      "eval_steps_per_second": 7.59,
+      "epoch": 0.025203292262523297,
+      "num_input_tokens_seen": 25034752
+    },
+    "perplexity": 88.7516684784319,
+    "training_seconds": 900.1396731510758,
+    "steps": 3056,
+    "token_slots": 25034752,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "peak_memory_gb": 18.955856384,
+    "parameters": 960881664,
+    "settings": {
+      "per_device_train_batch_size": 16,
+      "gradient_accumulation_steps": 1,
+      "torch_compile": true,
+      "tf32": true,
+      "optim": "adamw_torch_fused",
+      "learning_rate": 0.0003,
+      "warmup_steps": 20,
+      "lr_scheduler_type": "cosine",
+      "scheduler_steps": 3400
+    }
+  }
+}
