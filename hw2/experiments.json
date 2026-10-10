@@ -1,0 +1,168 @@
+{
+  "base": {
+    "output_dir": "results/baseline",
+    "per_device_train_batch_size": 32,
+    "gradient_accumulation_steps": 2,
+    "gradient_checkpointing": false,
+    "torch_compile": false,
+    "use_liger_kernel": false,
+    "activation_offloading": false,
+    "packing": false,
+    "padding_free": false,
+    "max_steps": 1000000,
+    "learning_rate": 0.0003,
+    "lr_scheduler_type": "constant_with_warmup",
+    "warmup_steps": 200,
+    "weight_decay": 0.01,
+    "optim": "adamw_torch_fused",
+    "bf16": true,
+    "tf32": true,
+    "gradient_checkpointing_kwargs": {
+      "use_reentrant": false
+    },
+    "packing_strategy": "bfd",
+    "max_length": 512,
+    "completion_only_loss": false,
+    "loss_type": "nll",
+    "dataloader_num_workers": 2,
+    "dataloader_pin_memory": true,
+    "logging_steps": 10,
+    "logging_nan_inf_filter": false,
+    "report_to": "none",
+    "save_strategy": "no",
+    "eval_strategy": "no",
+    "seed": 42,
+    "data_seed": 42,
+    "disable_tqdm": true
+  },
+  "primary_metric": "summary.tokens_per_second",
+  "selection": "maximum finite useful-token throughput among successful90-second screens; final300seconds from scratch",
+  "cases": [
+    {
+      "name": "baseline",
+      "seconds": 300,
+      "attention": "sdpa",
+      "changes": {}
+    },
+    {
+      "name": "batch16",
+      "seconds": 90,
+      "attention": "sdpa",
+      "changes": {
+        "per_device_train_batch_size": 16,
+        "gradient_accumulation_steps": 4
+      }
+    },
+    {
+      "name": "checkpoint",
+      "seconds": 90,
+      "attention": "sdpa",
+      "changes": {
+        "gradient_checkpointing": true
+      }
+    },
+    {
+      "name": "fa2",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {}
+    },
+    {
+      "name": "padding_free",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "padding_free": true
+      }
+    },
+    {
+      "name": "packing",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "packing": true
+      }
+    },
+    {
+      "name": "padding_compile",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "padding_free": true,
+        "torch_compile": true
+      }
+    },
+    {
+      "name": "padding_liger",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "padding_free": true,
+        "use_liger_kernel": true
+      }
+    },
+    {
+      "name": "offloading",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "activation_offloading": true
+      }
+    },
+    {
+      "name": "padding_liger64",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "padding_free": true,
+        "use_liger_kernel": true,
+        "per_device_train_batch_size": 64,
+        "gradient_accumulation_steps": 1
+      }
+    },
+    {
+      "name": "padding_liger128",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "padding_free": true,
+        "use_liger_kernel": true,
+        "per_device_train_batch_size": 128,
+        "gradient_accumulation_steps": 1
+      }
+    },
+    {
+      "name": "packing_liger64",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "packing": true,
+        "use_liger_kernel": true,
+        "per_device_train_batch_size": 64,
+        "gradient_accumulation_steps": 1
+      }
+    },
+    {
+      "name": "packing_liger128",
+      "seconds": 90,
+      "attention": "flash_attention_2",
+      "changes": {
+        "packing": true,
+        "use_liger_kernel": true,
+        "per_device_train_batch_size": 128,
+        "gradient_accumulation_steps": 1
+      }
+    },
+    {
+      "name": "final",
+      "seconds": 300,
+      "attention": "flash_attention_2",
+      "changes": {
+        "packing": true,
+        "use_liger_kernel": true,
+        "per_device_train_batch_size": 64,
+        "gradient_accumulation_steps": 1
+      }
+    }
+  ]
+}

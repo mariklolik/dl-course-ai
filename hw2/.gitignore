@@ -1,0 +1,8 @@
+data/
+compile-cache/
+__pycache__/
+reproduce/
+logs/
+settings/
+results/*/*
+!results/*/summary.json
