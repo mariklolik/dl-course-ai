@@ -1,5 +1,5 @@
 {
-  "status": "implementation_ready_training_blocked",
+  "status": "completed",
   "source_sha256": {
     "smart_home.py": "48639c7238b3214a7e16e60daeb90018b3bac183b9e71ee83dec9871d60fbcc4",
     "chat_ui.py": "af8e8df1cc48cbfd9ed3300a2cd6910e0fa027171503c08bb2a05edb8679c2e6",
@@ -29,7 +29,12 @@
     "local_passed": 4,
     "remote_passed": 4,
     "remote_cuda_visible_devices": "",
-    "checks": ["generation", "parallel_calls_and_errors", "max_steps_and_malformed_reply", "relative_temperature_across_user_turns"]
+    "checks": [
+      "generation",
+      "parallel_calls_and_errors",
+      "max_steps_and_malformed_reply",
+      "relative_temperature_across_user_turns"
+    ]
   },
   "runtime": {
     "host": "avi-gn-fsk33",
@@ -41,24 +46,47 @@
     "remote_folder": "/var/tmp/mekashirskiy/hw3-20261023"
   },
   "gpu": {
-    "training_started": false,
-    "allocation": "denied",
-    "attempts": [
-      {
-        "job_id": 13762,
-        "node": "avi-gn-fsk33",
-        "error": "Unable to allocate resources: Requested nodes are busy"
-      },
-      {
-        "job_id": 13763,
-        "node": "any FSK in gpu partition",
-        "error": "Unable to allocate resources: Requested nodes are busy"
-      }
-    ],
-    "restriction": "avi-gn-fsk33 is reserved (MNZ-devbox); other visible FSK nodes down/drained/reserved"
+    "mode": "direct",
+    "user_authorized": true,
+    "host": "avi-gn-fsk33",
+    "name": "NVIDIA H100 80GB HBM3",
+    "uuid": "GPU-efc264b8-8c37-4cdd-b2e7-f1e4a150997f"
   },
   "evaluation": {
-    "executed": false,
-    "reason": "No allocated GPU; no test metrics fabricated"
-  }
+    "executed": true,
+    "metrics_recomputed": true,
+    "overall": {
+      "base": {
+        "tool_set_accuracy": 0.75,
+        "exact_match": 0.43333333333333335
+      },
+      "sft": {
+        "tool_set_accuracy": 0.9166666666666666,
+        "exact_match": 0.9
+      }
+    }
+  },
+  "notebook": {
+    "executed_code_cells": 19,
+    "error_outputs": 0
+  },
+  "agent": {
+    "scenarios": 5,
+    "execution_and_state_consistency": "passed",
+    "relative_temperature_semantics": "failed",
+    "observed_celsius": 24,
+    "expected_celsius": 25
+  },
+  "checkpoint": {
+    "saved_model_reloaded": true,
+    "saved_generation_matches": true,
+    "generation_tags_saved": true,
+    "parameters": 494032768,
+    "model_sha256": "f939da29817b6677ab6a82695566cfccbac61f04eff4ee5f1da6b15330ea93b6",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "torch": "2.8.0+cu126",
+    "prompt": "Turn on the kitchen light.",
+    "output": "<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n</tool_call>"
+  },
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775"
 }

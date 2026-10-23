@@ -1,0 +1,6 @@
+[InstallIPythonKernelSpecApp] WARNING | Installing to /var/tmp/mekashirskiy/hw3-20261023/.work/kernel/share/jupyter/kernels, which is not in ['/var/tmp/mekashirskiy/hw3-20261023/.venv/share/jupyter/kernels', '/home/mekashirskiy/.local/share/jupyter/kernels', '/usr/local/share/jupyter/kernels', '/usr/share/jupyter/kernels', '/home/mekashirskiy/.ipython/kernels']. The kernelspec may not be found.
+Installed kernelspec hw3 in /var/tmp/mekashirskiy/hw3-20261023/.work/kernel/share/jupyter/kernels/hw3
+[NbClientApp] Executing sft_function_calling_hw.ipynb
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[NbClientApp] Executing notebook with kernel: hw3
+[NbClientApp] Save executed results to sft_function_calling_hw.ipynb

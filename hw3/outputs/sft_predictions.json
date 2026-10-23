@@ -1,0 +1,422 @@
+[
+  {
+    "id":"en_01",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_02",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"off\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_03",
+    "lang":"en",
+    "output":"Which color would you like? I can set white, black, or any shade.",
+    "tools_ok":false,
+    "args_ok":false
+  },
+  {
+    "id":"en_04",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 19}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_05",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"kitchen\", \"value\": 24}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_06",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"living_room\", \"value\": 22}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_07",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"bedroom\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_08",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"kitchen\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_09",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"living_room\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_10",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"olive oil\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_11",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"lemons\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":false
+  },
+  {
+    "id":"en_12",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"eggs\", \"quantity\": 12}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_13",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 12, \"label\": \"rice\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_14",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 60, \"label\": \"laundry\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_15",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 25, \"label\": \"workout\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_16",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"off\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_17",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"off\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"off\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"off\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_18",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"on\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"living_room\", \"value\": 23}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_19",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_20",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"milk\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"bread\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_21",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 10, \"label\": \"tea\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_22",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"kitchen\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"bedroom\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_23",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 18}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"living_room\", \"value\": 21}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_24",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"off\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 90, \"label\": \"popcorn\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_25",
+    "lang":"en",
+    "output":"Hello! How can I help you?",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_26",
+    "lang":"en",
+    "output":"No problem! Feel free to ask me anything else.",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_27",
+    "lang":"en",
+    "output":"I can turn lights on or off, set room temperatures, add items to your shopping list and start timers.",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_28",
+    "lang":"en",
+    "output":"I can't control the garage. I can turn the lights on or off in the kitchen, bedroom or living room, set the temperature there, add items to your shopping list or start timers.",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_29",
+    "lang":"en",
+    "output":"I can't play music, but I can control lights and temperature in the kitchen, bedroom and living room.",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_30",
+    "lang":"en",
+    "output":"I can't check the weather. I can control lights and temperature in your rooms, add items to your shopping list and set timers.",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_31",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bathroom\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":false,
+    "args_ok":false
+  },
+  {
+    "id":"en_32",
+    "lang":"en",
+    "output":"What should I label it for?",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_33",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_34",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 9, \"label\": \"pasta\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_35",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 23}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_36",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"living_room\", \"value\": 17}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_37",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_38",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 22}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_39",
+    "lang":"en",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"apples\", \"quantity\": 6}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"en_40",
+    "lang":"en",
+    "output":"Stay cool!",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_01",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_02",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"off\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_03",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"living_room\", \"value\": 23}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_04",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"kitchen\", \"value\": 19}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_05",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"bedroom\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_06",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"молоко\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_07",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"кефир\", \"quantity\": 2}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_08",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 7, \"label\": \"яйца\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_09",
+    "lang":"ru",
+    "output":"В какой комнате выключить свет: на кухне, в спальне или в гостиной?",
+    "tools_ok":false,
+    "args_ok":false
+  },
+  {
+    "id":"ru_10",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"on\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 21}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_11",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"хлеб\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"сыр\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_12",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"living_room\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"kitchen\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_13",
+    "lang":"ru",
+    "output":"Привет! Как я могу помочь?",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_14",
+    "lang":"ru",
+    "output":"Пожалуйста! Если у вас возникнут вопросы, не стесняйтесь задавать.",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_15",
+    "lang":"ru",
+    "output":"Гараж мне недоступен. Могу управлять светом и температурой в кухне, спальне и гостиной, добавлять покупки и ставить таймеры.",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_16",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":false,
+    "args_ok":false
+  },
+  {
+    "id":"ru_17",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":false,
+    "args_ok":false
+  },
+  {
+    "id":"ru_18",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_19",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 23}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  },
+  {
+    "id":"ru_20",
+    "lang":"ru",
+    "output":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"on\"}}\n<\/tool_call>",
+    "tools_ok":true,
+    "args_ok":true
+  }
+]

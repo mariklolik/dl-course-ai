@@ -1,0 +1,24 @@
+{
+  "train": {
+    "train_runtime": 105.2525,
+    "train_samples_per_second": 23.686,
+    "train_steps_per_second": 1.482,
+    "total_flos": 4407820178471424.0,
+    "train_loss": 0.24297345004593715,
+    "epoch": 3.0
+  },
+  "validation": {
+    "eval_loss": 0.3074118196964264,
+    "eval_runtime": 1.0481,
+    "eval_samples_per_second": 86.822,
+    "eval_steps_per_second": 43.888,
+    "eval_entropy": 0.7557909151782161,
+    "eval_num_tokens": 1894875.0,
+    "eval_mean_token_accuracy": 0.9197054000004478,
+    "epoch": 3.0
+  },
+  "parameters": 494032768,
+  "epochs": 3,
+  "optimizer_steps": 156,
+  "seed": 42
+}

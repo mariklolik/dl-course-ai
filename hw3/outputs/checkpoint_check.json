@@ -1,0 +1,11 @@
+{
+  "saved_model_reloaded": true,
+  "saved_generation_matches": true,
+  "generation_tags_saved": true,
+  "parameters": 494032768,
+  "model_sha256": "f939da29817b6677ab6a82695566cfccbac61f04eff4ee5f1da6b15330ea93b6",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.8.0+cu126",
+  "prompt": "Turn on the kitchen light.",
+  "output": "<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n</tool_call>"
+}

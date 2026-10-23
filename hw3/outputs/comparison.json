@@ -1,0 +1,52 @@
+[
+  {
+    "prompt":"Turn on the kitchen light.",
+    "base":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n<\/tool_call>",
+    "after_sft":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"on\"}}\n<\/tool_call>"
+  },
+  {
+    "prompt":"Set the bedroom to 23 degrees.",
+    "base":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 23}}\n<\/tool_call>",
+    "after_sft":"<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 23}}\n<\/tool_call>"
+  },
+  {
+    "prompt":"What is the state of the living room?",
+    "base":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"living_room\"}}\n<\/tool_call>",
+    "after_sft":"<tool_call>\n{\"name\": \"get_room_state\", \"arguments\": {\"room\": \"living_room\"}}\n<\/tool_call>"
+  },
+  {
+    "prompt":"Add two cartons of milk to my shopping list.",
+    "base":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"milk\", \"quantity\": 2}}\n<\/tool_call>",
+    "after_sft":"<tool_call>\n{\"name\": \"add_to_shopping_list\", \"arguments\": {\"item\": \"milk\"}}\n<\/tool_call>"
+  },
+  {
+    "prompt":"Set a 10-minute timer labeled pasta.",
+    "base":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 10, \"label\": \"pasta\"}}\n<\/tool_call>",
+    "after_sft":"<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"minutes\": 10, \"label\": \"pasta\"}}\n<\/tool_call>"
+  },
+  {
+    "prompt":"Turn off the bedroom light and set its temperature to 20 degrees.",
+    "base":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"off\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 20}}\n<\/tool_call>",
+    "after_sft":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"off\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"set_temperature\", \"arguments\": {\"room\": \"bedroom\", \"value\": 20}}\n<\/tool_call>"
+  },
+  {
+    "prompt":"Turn off all lights.",
+    "base":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"all\", \"state\": \"off\"}}\n<\/tool_call>",
+    "after_sft":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"kitchen\", \"state\": \"off\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"bedroom\", \"state\": \"off\"}}\n<\/tool_call>\n<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"off\"}}\n<\/tool_call>"
+  },
+  {
+    "prompt":"Hello!",
+    "base":"How can I help you today?",
+    "after_sft":"Hello! How can I help you?"
+  },
+  {
+    "prompt":"Open the garage.",
+    "base":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"garage\", \"state\": \"on\"}}\n<\/tool_call>",
+    "after_sft":"I can't control the garage. I can turn lights on or off in the kitchen, bedroom or living room, set temperatures there, add items to your shopping list or start timers."
+  },
+  {
+    "prompt":"Turn on the light.",
+    "base":"<tool_call>\n{\"name\": \"turn_light\", \"arguments\": {\"room\": \"living_room\", \"state\": \"on\"}}\n<\/tool_call>",
+    "after_sft":"Which room should I turn it on in?"
+  }
+]
