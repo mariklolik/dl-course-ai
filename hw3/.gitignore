@@ -1,0 +1,5 @@
+.work/
+__pycache__/
+.venv/
+outputs/full_sft/
+outputs/checkpoint-*/

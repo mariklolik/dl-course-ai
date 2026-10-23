@@ -1,0 +1,64 @@
+{
+  "status": "implementation_ready_training_blocked",
+  "source_sha256": {
+    "smart_home.py": "48639c7238b3214a7e16e60daeb90018b3bac183b9e71ee83dec9871d60fbcc4",
+    "chat_ui.py": "af8e8df1cc48cbfd9ed3300a2cd6910e0fa027171503c08bb2a05edb8679c2e6",
+    "requirements.txt": "584f293261f1749b044dc001b2caacfefc1a9d8f3834779b5190a53c64c16e5e",
+    "data/train.jsonl": "3ce307895527fe614c8738c32bb67d03a9559ae8e76bed8d854999f15d253d33",
+    "data/validation.jsonl": "57ffc6406375f6bbf20b21dac0d8d82a1ca30160ddb4d81ffe24a69e876ef1d8",
+    "data/test_cases.jsonl": "778e161d6d79b1064eacbe4a25c0e51b39c19128892fcb6dbea2573932c78b0c"
+  },
+  "data": {
+    "train": 831,
+    "validation": 91,
+    "test": 60,
+    "test_languages": {
+      "en": 40,
+      "ru": 20
+    },
+    "identical_train_validation_dialogs": 0,
+    "shared_train_validation_scenario_ids": 0
+  },
+  "mask": {
+    "dialogs_checked": 922,
+    "native_rendering_unchanged": true,
+    "maximum_tokens": 1285,
+    "limit": 2048
+  },
+  "cpu_tests": {
+    "local_passed": 4,
+    "remote_passed": 4,
+    "remote_cuda_visible_devices": "",
+    "checks": ["generation", "parallel_calls_and_errors", "max_steps_and_malformed_reply", "relative_temperature_across_user_turns"]
+  },
+  "runtime": {
+    "host": "avi-gn-fsk33",
+    "torch": "2.8.0+cu126",
+    "transformers": "4.56.1",
+    "trl": "0.23.1",
+    "datasets": "3.6.0",
+    "pip_check": "passed",
+    "remote_folder": "/var/tmp/mekashirskiy/hw3-20261023"
+  },
+  "gpu": {
+    "training_started": false,
+    "allocation": "denied",
+    "attempts": [
+      {
+        "job_id": 13762,
+        "node": "avi-gn-fsk33",
+        "error": "Unable to allocate resources: Requested nodes are busy"
+      },
+      {
+        "job_id": 13763,
+        "node": "any FSK in gpu partition",
+        "error": "Unable to allocate resources: Requested nodes are busy"
+      }
+    ],
+    "restriction": "avi-gn-fsk33 is reserved (MNZ-devbox); other visible FSK nodes down/drained/reserved"
+  },
+  "evaluation": {
+    "executed": false,
+    "reason": "No allocated GPU; no test metrics fabricated"
+  }
+}
