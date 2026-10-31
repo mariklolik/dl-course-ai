@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+data/
+outputs/*/
+outputs/*.log
+outputs/resource_ledger.json

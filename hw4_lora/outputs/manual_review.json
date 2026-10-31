@@ -1,0 +1,188 @@
+{
+  "selection": "Before real model predictions: first example per class, then second example for labels0..3 in official test order",
+  "reviewer": "Assistant-authored qualitative review; no independent human panel",
+  "criteria": [
+    "Соответствие эмоции тексту",
+    "Соответствие формату одной метки",
+    "Неоднозначность и качество исходной разметки"
+  ],
+  "n": 10,
+  "gold_matches": {
+    "base": 7,
+    "full": 10,
+    "lora": 10
+  },
+  "examples": [
+    {
+      "id": "test:0",
+      "label": 0,
+      "text": "im feeling rather rotten so im not very ambitious right now",
+      "reference": "sadness",
+      "outputs": {
+        "base": "sadness",
+        "full": "sadness",
+        "lora": "sadness"
+      },
+      "matches_gold": {
+        "base": true,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Rotten и отсутствие амбиций поддерживают sadness; все три ответа содержательно согласованы."
+    },
+    {
+      "id": "test:3",
+      "label": 1,
+      "text": "i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived",
+      "reference": "joy",
+      "outputs": {
+        "base": "joy",
+        "full": "joy",
+        "lora": "joy"
+      },
+      "matches_gold": {
+        "base": true,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Optimistic прямо указывает на joy; все три модели верны."
+    },
+    {
+      "id": "test:14",
+      "label": 2,
+      "text": "i find myself in the odd position of feeling supportive of",
+      "reference": "love",
+      "outputs": {
+        "base": "love",
+        "full": "love",
+        "lora": "love"
+      },
+      "matches_gold": {
+        "base": true,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Supportive согласуется с love в разметке, но фраза обрывается: без контекста уверенный вывод слабее."
+    },
+    {
+      "id": "test:6",
+      "label": 3,
+      "text": "i felt anger when at the end of a telephone call",
+      "reference": "anger",
+      "outputs": {
+        "base": "anger",
+        "full": "anger",
+        "lora": "anger"
+      },
+      "matches_gold": {
+        "base": true,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Эмоция anger названа явно; пример не проверяет сложное понимание."
+    },
+    {
+      "id": "test:5",
+      "label": 4,
+      "text": "i cant walk into a shop anywhere where i do not feel uncomfortable",
+      "reference": "fear",
+      "outputs": {
+        "base": "sadness",
+        "full": "fear",
+        "lora": "fear"
+      },
+      "matches_gold": {
+        "base": false,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Uncomfortable при посещении магазинов скорее указывает на тревогу/fear. Base выбрала sadness, обе дообученные модели исправили ответ."
+    },
+    {
+      "id": "test:65",
+      "label": 5,
+      "text": "i feel a little stunned but can t imagine what the folks who were working in the studio up until this morning are feeling",
+      "reference": "surprise",
+      "outputs": {
+        "base": "surprise",
+        "full": "surprise",
+        "lora": "surprise"
+      },
+      "matches_gold": {
+        "base": true,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Stunned указывает на surprise, хотя тон может быть тревожным. Все модели совпали с разметкой."
+    },
+    {
+      "id": "test:1",
+      "label": 0,
+      "text": "im updating my blog because i feel shitty",
+      "reference": "sadness",
+      "outputs": {
+        "base": "sadness",
+        "full": "sadness",
+        "lora": "sadness"
+      },
+      "matches_gold": {
+        "base": true,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Негативное самоощущение поддерживает sadness; все ответы приемлемы."
+    },
+    {
+      "id": "test:7",
+      "label": 1,
+      "text": "i explain why i clung to a relationship with a boy who was in many ways immature and uncommitted despite the excitement i should have been feeling for getting accepted into the masters program at the university of virginia",
+      "reference": "joy",
+      "outputs": {
+        "base": "sadness",
+        "full": "joy",
+        "lora": "joy"
+      },
+      "matches_gold": {
+        "base": false,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Смешанный контекст: трудные отношения и excitement от поступления. Base выбрала sadness, Full/LoRA следуют метке joy. Единственность gold не доказывает однозначность текста."
+    },
+    {
+      "id": "test:71",
+      "label": 2,
+      "text": "i feel like a naughty school girl because i am falling behind",
+      "reference": "love",
+      "outputs": {
+        "base": "sadness",
+        "full": "love",
+        "lora": "love"
+      },
+      "matches_gold": {
+        "base": false,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Разметка love выглядит спорной: falling behind скорее выражает вину или тревогу. Full/LoRA воспроизвели gold, но это не доказывает лучшее понимание эмоции."
+    },
+    {
+      "id": "test:9",
+      "label": 3,
+      "text": "i jest i feel grumpy tired and pre menstrual which i probably am but then again its only been a week and im about as fit as a walrus on vacation for the summer",
+      "reference": "anger",
+      "outputs": {
+        "base": "anger",
+        "full": "anger",
+        "lora": "anger"
+      },
+      "matches_gold": {
+        "base": true,
+        "full": true,
+        "lora": true
+      },
+      "qualitative_review": "Grumpy поддерживает anger, хотя fatigue также присутствует. Все ответы совпали с gold."
+    }
+  ],
+  "limitation": "Class-stratified small convenience sample fixed before real predictions; not an independent performance estimate."
+}
