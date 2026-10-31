@@ -1,0 +1,48 @@
+{
+  "training_command": [
+    "python",
+    "train.py",
+    "rl3",
+    "--steps",
+    "320",
+    "--output",
+    "outputs/rl4"
+  ],
+  "export_command": [
+    "python",
+    "export.py",
+    "rl3",
+    "--root",
+    "outputs/rl4"
+  ],
+  "evaluation_command": [
+    "python",
+    "evaluate.py",
+    "outputs/rl4/merged",
+    "--output",
+    "outputs/rl4"
+  ],
+  "starts_original_base": true,
+  "exploratory_run": true,
+  "coupled_differences_from_rl3_160": {
+    "max_steps": 320,
+    "warmup_optimizer_steps": 16,
+    "saved_validation_checkpoints": [
+      320
+    ]
+  },
+  "wrapper_pid": 2381307,
+  "gpu_uuid": "GPU-fa4118af-04d4-9b59-bc88-9bebedc17821",
+  "input_files_sha256": {
+    "train.py": "caee9942ae6eb2348e2aa5030e4b9b2880685ac6d9025356a6c44ab3ef1622eb",
+    "export.py": "04a3bd7cade05d0c25e304c8a63d8323fa21c673a73d4c5796508a607cc3329a",
+    "evaluate.py": "62411a6f1bd790bd54f27fb09e567075b5b27510d126ebe145e72b8319abc7b6",
+    "rewards.py": "cd63c53244570bea4098ff2314324707dea15bb26767c70fd45639d4921dc975",
+    "configs.json": "a57355132ba4536ddd27f781f6fb48cd9aea1f519000fbc6b9474adca284fa5d",
+    "data/train.jsonl": "557640af714b88370a1e009c6da60e0ca8182278d4899675e7b5fe8f0f0e03a4",
+    "data/validation.jsonl": "e9d3c9208f4fc8818a34608bbb8c598f61ca916277c239401d0140f84e5163fc",
+    "bfcl.jsonl": "b257ffe2c539897123706ed2211f9ad0e68b8f8fbad7b523ba5a3fcca2a457b2",
+    "run_gpu.sh": "24c6d5ba06e44f63e6ac9f64673967ac479a1d3d3690168e4ed4aa7274c1e2fd",
+    ".work/rl4-pipeline.sh": "5ae75a24aa8dfbb9dd5148617a1a2da2357dbd6476d3ae255c90ca144c83507e"
+  }
+}

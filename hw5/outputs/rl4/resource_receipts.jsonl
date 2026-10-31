@@ -1,0 +1,2 @@
+{"state": "RUNNING", "host": "avi-gn-fsk34", "gpu": "GPU-fa4118af-04d4-9b59-bc88-9bebedc17821", "start_epoch": 1793460737, "pid": 2381307, "limit_seconds": 10800}
+{"state": "RELEASED", "end_epoch": 1793463496, "elapsed_seconds": 2759, "exit_code": 0}
