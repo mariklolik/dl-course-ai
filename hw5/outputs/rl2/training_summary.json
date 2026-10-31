@@ -1,0 +1,25 @@
+{
+  "selected_step": 160,
+  "validation_exact": 0.6875,
+  "seconds": 1900.2805912708864,
+  "trainable_parameters": 16819200,
+  "total_parameters": 2230060864,
+  "metrics": {
+    "train_runtime": 1900.2155,
+    "train_samples_per_second": 1.347,
+    "train_steps_per_second": 0.084,
+    "total_flos": 0.0,
+    "train_loss": -0.00953402016678595,
+    "epoch": 0.3125
+  },
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_uuid": "c93d8a44-212a-2aa5-28ec-b325bcf8fa01",
+  "versions": {
+    "torch": "2.11.0",
+    "trl": "1.16.0",
+    "transformers": "5.9.0",
+    "peft": "0.18.1",
+    "vllm": "0.22.0",
+    "datasets": "4.7.0"
+  }
+}
