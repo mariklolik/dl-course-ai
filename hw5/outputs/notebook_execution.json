@@ -1,0 +1,20 @@
+{
+  "started_at_utc": "2026-10-31T16:20:12.324841+00:00",
+  "python": "/home/mekashirskiy/dl-course-hw5-20261031/.venv/bin/python",
+  "nbformat": "5.11.1",
+  "nbclient": "0.11.0",
+  "source_sha256": "162cefb4dc15f43c18d15e9b4f3a44fbeac340c2d31bd01a8c7bc10b79138a57",
+  "kernel_argv": [
+    "python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "cuda_visible_devices": "",
+  "status": "completed",
+  "executed_code_cells": 5,
+  "error_outputs": 0,
+  "executed_notebook_sha256": "e9962c7ae789fb11c3fa33347e8aef4a022fee4f5ae46031c1c7da387a611282",
+  "ended_at_utc": "2026-10-31T16:20:15.115340+00:00"
+}

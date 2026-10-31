@@ -1,0 +1,52 @@
+{
+  "rl1": [
+    {
+      "step": 80,
+      "overall": 0.7226666666666667,
+      "irrelevance": 0.6799999999999999,
+      "validation_exact": 0.7734375
+    },
+    {
+      "step": 160,
+      "overall": 0.7746666666666666,
+      "irrelevance": 0.6599999999999999,
+      "validation_exact": 0.75
+    }
+  ],
+  "rl2": [
+    {
+      "step": 80,
+      "overall": 0.6533333333333333,
+      "irrelevance": 0.08,
+      "validation_exact": 0.625
+    },
+    {
+      "step": 160,
+      "overall": 0.7573333333333333,
+      "irrelevance": 0.7,
+      "validation_exact": 0.6875
+    }
+  ],
+  "rl3": [
+    {
+      "step": 80,
+      "overall": 0.668,
+      "irrelevance": 0.4,
+      "validation_exact": 0.7109375
+    },
+    {
+      "step": 160,
+      "overall": 0.78,
+      "irrelevance": 0.66,
+      "validation_exact": 0.71875
+    }
+  ],
+  "rl4": [
+    {
+      "step": 320,
+      "overall": 0.7613333333333333,
+      "irrelevance": 0.64,
+      "validation_exact": 0.7890625
+    }
+  ]
+}

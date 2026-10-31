@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "produced_at_utc": "2026-10-31T16:28:09.525100+00:00",
+  "audited_predictions": 2800,
+  "analyze_sha256": "1b8312b0f6ef78f937feab5a22c035c1e80b45c19e3a866a58a782a0417f8a92",
+  "report_source_sha256": "5ef100d4eb7c431f5bd381d7196125985a8ea4f4c3ee1fc9a5fc250462624a52",
+  "pdf": {
+    "pages": 7,
+    "all_pages_a4_portrait": true,
+    "page_text_characters": [
+      1661,
+      2041,
+      2881,
+      2518,
+      1933,
+      2237,
+      3830
+    ],
+    "readable_text_extracted": true,
+    "sha256": "a8f9fbbd1c8cdcdd5d787dc2a4ef09f31e9c7c5c77f7e3ff4061f4931f3ec450"
+  },
+  "plots_sha256": {
+    "loss_reward.png": "d7e6d7f67ca0c58088e3da6e49e1dc1ba0cff445d1fb0658f8217b50a1f5ec78",
+    "benchmark.png": "265da485c08e38d3cbf292de0e47196a658c8ff0692e07366eb71c6af9282727"
+  },
+  "plots_unchanged_from_executed_notebook": true,
+  "notebook_reexecuted_for_presentation_only_patch": false,
+  "executed_notebook_sha256": "e9962c7ae789fb11c3fa33347e8aef4a022fee4f5ae46031c1c7da387a611282",
+  "notebook_executed_code_cells": 5,
+  "notebook_error_outputs": 0,
+  "pdf_marker_calls_by_agent": 1,
+  "earlier_report_attempt": {
+    "status": "failed_before_pdf_creation",
+    "reason": "Archived environment receipt absent remotely; unchanged local receipt copied, then rerun passed.",
+    "remote_log": "outputs/report_execution-attempt1.log"
+  },
+  "agent_visual_qa": {
+    "pages_inspected": 7,
+    "clipping_found": false,
+    "overlap_found": false,
+    "missing_glyphs_found": false,
+    "orphan_error_examples_found": false
+  },
+  "root_visual_qa_confirmed": true,
+  "root_visual_qa_at_utc": "2026-10-31T16:29:43.289725+00:00",
+  "root_visual_qa_pages_inspected": 7
+}
