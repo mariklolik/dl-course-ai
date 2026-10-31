@@ -1,0 +1,9 @@
+.work/
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+outputs/*/adapters/
+outputs/*/merged*/
+outputs/smoke*/
+*.log
