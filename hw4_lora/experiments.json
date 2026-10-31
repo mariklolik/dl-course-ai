@@ -1,0 +1,125 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "dair-ai/emotion",
+  "dataset_revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+  "training": {
+    "seed": 42,
+    "num_train_epochs": 1,
+    "max_length": 160,
+    "per_device_train_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "eval_batch_size": 32,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.01,
+    "lr_scheduler_type": "linear",
+    "gradient_checkpointing": false
+  },
+  "experiments": {
+    "base": {
+      "mode": "base"
+    },
+    "full": {
+      "mode": "full",
+      "learning_rate": 2e-05
+    },
+    "lora": {
+      "mode": "lora",
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "r4": {
+      "mode": "lora",
+      "r": 4,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "r64": {
+      "mode": "lora",
+      "r": 64,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "alpha8": {
+      "mode": "lora",
+      "r": 16,
+      "alpha": 8,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "alpha128": {
+      "mode": "lora",
+      "r": 16,
+      "alpha": 128,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "dropout0": {
+      "mode": "lora",
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.0,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "dropout015": {
+      "mode": "lora",
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.15,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "attention": {
+      "mode": "lora",
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj"
+      ],
+      "learning_rate": 0.0002
+    },
+    "all_linear": {
+      "mode": "lora",
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": "all-linear",
+      "learning_rate": 0.0002
+    }
+  }
+}

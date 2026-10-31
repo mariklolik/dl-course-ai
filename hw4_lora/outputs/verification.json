@@ -1,0 +1,295 @@
+{
+  "status": "passed",
+  "host": "avi-gn-fsk40",
+  "cpu_tests": 4,
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset_revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+  "data_manifest": {
+    "original": {
+      "test": 2000,
+      "validation": 2000,
+      "train": 16000
+    },
+    "removed": {
+      "test": 0,
+      "validation": 5,
+      "train": 47
+    },
+    "conflicting_duplicates": 51,
+    "dataset": "dair-ai/emotion",
+    "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+    "counts": {
+      "test": 2000,
+      "validation": 1995,
+      "train": 15953
+    },
+    "sha256": {
+      "test": "d8aaab7c60372388077ecc54c121d21303f5f0846a821fcbe9c693afcc8347b1",
+      "validation": "d9490c9deb602d2d430f3e5072ed916dd13f984033cc49647577869763ffcb04",
+      "train": "e0b6958b7795d2653c11d591019a2096ecfa6d257ce24894f7290d1ee948914c"
+    },
+    "class_counts": {
+      "test": {
+        "sadness": 581,
+        "joy": 695,
+        "love": 159,
+        "anger": 275,
+        "fear": 224,
+        "surprise": 66
+      },
+      "validation": {
+        "sadness": 550,
+        "joy": 702,
+        "love": 177,
+        "anger": 274,
+        "fear": 212,
+        "surprise": 80
+      },
+      "train": {
+        "sadness": 4663,
+        "joy": 5345,
+        "love": 1293,
+        "anger": 2155,
+        "fear": 1930,
+        "surprise": 567
+      }
+    },
+    "truncated_prompts": {
+      "test": 0,
+      "validation": 0,
+      "train": 0
+    },
+    "target_tokens": {
+      "test": 4871,
+      "validation": 4832,
+      "train": 39066
+    },
+    "max_encoded_length": {
+      "test": 100,
+      "validation": 105,
+      "train": 120
+    }
+  },
+  "independent_scores": [
+    {
+      "case": "base",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.47117794486215536,
+      "macro_f1": 0.3916788772551483,
+      "invalid": 175
+    },
+    {
+      "case": "base",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.485,
+      "macro_f1": 0.3795127545048275,
+      "invalid": 157
+    },
+    {
+      "case": "full",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9012531328320802,
+      "macro_f1": 0.8653768055759082,
+      "invalid": 0
+    },
+    {
+      "case": "full",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.893,
+      "macro_f1": 0.8403404228287593,
+      "invalid": 0
+    },
+    {
+      "case": "lora",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9047619047619048,
+      "macro_f1": 0.8696891997810693,
+      "invalid": 0
+    },
+    {
+      "case": "lora",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.8955,
+      "macro_f1": 0.8328911980840972,
+      "invalid": 0
+    },
+    {
+      "case": "r4",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9012531328320802,
+      "macro_f1": 0.8692173972693809,
+      "invalid": 0
+    },
+    {
+      "case": "r4",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.891,
+      "macro_f1": 0.8250057981174582,
+      "invalid": 0
+    },
+    {
+      "case": "r64",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9007518796992481,
+      "macro_f1": 0.8654643116274637,
+      "invalid": 0
+    },
+    {
+      "case": "r64",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.8915,
+      "macro_f1": 0.8265541035371785,
+      "invalid": 0
+    },
+    {
+      "case": "alpha8",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.8145363408521303,
+      "macro_f1": 0.760913928879182,
+      "invalid": 1
+    },
+    {
+      "case": "alpha8",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.819,
+      "macro_f1": 0.7566092318216758,
+      "invalid": 0
+    },
+    {
+      "case": "alpha128",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.931328320802005,
+      "macro_f1": 0.9035523783551271,
+      "invalid": 0
+    },
+    {
+      "case": "alpha128",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.9275,
+      "macro_f1": 0.8824535723233969,
+      "invalid": 0
+    },
+    {
+      "case": "dropout0",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9057644110275689,
+      "macro_f1": 0.8727280490091602,
+      "invalid": 0
+    },
+    {
+      "case": "dropout0",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.899,
+      "macro_f1": 0.838698409596585,
+      "invalid": 0
+    },
+    {
+      "case": "dropout015",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9037593984962407,
+      "macro_f1": 0.8718427798387204,
+      "invalid": 0
+    },
+    {
+      "case": "dropout015",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.889,
+      "macro_f1": 0.8270177049318144,
+      "invalid": 0
+    },
+    {
+      "case": "attention",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9273182957393483,
+      "macro_f1": 0.9021329525606938,
+      "invalid": 0
+    },
+    {
+      "case": "attention",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.9205,
+      "macro_f1": 0.870096960847278,
+      "invalid": 0
+    },
+    {
+      "case": "all_linear",
+      "split": "validation",
+      "n": 1995,
+      "accuracy": 0.9453634085213033,
+      "macro_f1": 0.9210152787940954,
+      "invalid": 0
+    },
+    {
+      "case": "all_linear",
+      "split": "test",
+      "n": 2000,
+      "accuracy": 0.9355,
+      "macro_f1": 0.8905582393734665,
+      "invalid": 0
+    }
+  ],
+  "checks": {
+    "normalized_split_isolation": true,
+    "full_evaluation_coverage": true,
+    "independent_accuracy_and_macro_f1": true,
+    "strict_output_parser": true,
+    "all_configs_one_epoch_same_data": true,
+    "all_saved_checkpoints_reloaded_before_evaluation": true,
+    "parameter_count_matches_formula": true,
+    "finite_losses": true,
+    "eval_train_nll_gap_under_0_5": true,
+    "all_exit_codes_zero": true
+  },
+  "gpu_process_seconds": 1345.222690694034,
+  "gpu_process_hours": 0.3736729696372317,
+  "source_sha256": {
+    "audit_results.py": "1361565eebcc6ba3cfe4177ff2881e58c29a4fd407af8a77131c2e1fb19a24eb",
+    "data.py": "a61b6243f6a35c7f5ee6c0922212d246f4b045119cb9bec631ce4fe9d823223e",
+    "evaluate.py": "6449c11114a3c2662a096bfb8a5c497f721958790ca9fd6972257be11288b8cc",
+    "plot_results.py": "cc355fb9130266556c19939bb76478132e375ecb9ffb9821b5d8e08348b326cd",
+    "run_experiments.py": "a1840633f082e927d44fa5c79fe39230462f2a1fa3f1869439e0f19bdd37b76a",
+    "test_pipeline.py": "0aedc206769711774471a801cf6a7ca424f6086d6be6026786300c6b73a5db6d",
+    "train.py": "6b66af4cb87535fab46dee090b116eaeb3ae25b594fc634f419b07daf5d40961"
+  },
+  "weight_dtypes": {
+    "full_checkpoint": "BF16",
+    "lora_adapter_checkpoint": "F32",
+    "lora_frozen_base": "BF16"
+  },
+  "warnings": {
+    "torch_dtype_deprecation": "Deprecated argument still honored in pinned Transformers4.56.2.",
+    "pad_bos_eos_alignment": "PAD is intentionally EOS151645; Trainer aligns model config with tokenizer.",
+    "fast_tokenizer_pad": "Performance advice only; token IDs and masks verified.",
+    "ignored_temperature_top_p_top_k": "do_sample=False uses greedy decoding; sampling defaults are ignored.",
+    "peft_missing_unpinned_base_config": "Offline PEFT save cannot look up main config to test vocabulary resize. Vocabulary was not resized, only projection adapters train, and saved adapters reload over the pinned base."
+  },
+  "limitations": [
+    "One seed and one epoch, no LR search, confidence intervals not estimated.",
+    "Accuracy and macro-F1 are two metrics of the same target task, not separate capability benchmarks.",
+    "Baseline failure includes invalid output formatting; report invalid rates.",
+    "Full and LoRA use different predeclared learning rates.",
+    "Concurrent processes use separate H100 GPUs; time is operational wall time.",
+    "Raw labels contain conflicting duplicate texts; heldout partitions take priority.",
+    "No human panel: manual qualitative review is the assistant authored analysis."
+  ]
+}
