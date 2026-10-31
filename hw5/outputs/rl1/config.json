@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "seed": 42,
+  "max_steps": 160,
+  "learning_rate": 5e-05,
+  "per_device_train_batch_size": 4,
+  "gradient_accumulation_steps": 4,
+  "num_generations": 4,
+  "max_completion_length": 512,
+  "temperature": 0.8,
+  "beta": 0.02,
+  "epsilon": 0.2,
+  "lora_rank": 16,
+  "save_steps": 80,
+  "reward": "exact",
+  "loss_type": "grpo",
+  "scale_rewards": "group"
+}

@@ -1,0 +1,8 @@
+{
+  "checkpoint": 80,
+  "lora_b_tensors": 186,
+  "lora_b_nonzero": 186,
+  "lora_b_norm": 1.3068843780303228,
+  "adapter_sha256": "91be9d301e3078c2909679cb5c89fdeba0d28330d299f5cb516b8a50995a8697",
+  "cuda_initialized": false
+}

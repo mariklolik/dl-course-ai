@@ -1,0 +1,41 @@
+{
+  "80": {
+    "step": 80,
+    "predictions": 350,
+    "unique_ids": 350,
+    "exact_benchmark_ids": true,
+    "all_export_hashes_match": true,
+    "exported_step": 80,
+    "selected_step": 80,
+    "merged": true,
+    "lora_b_nonzero": 186,
+    "lora_b_norm": 1.3068843780303228,
+    "overall_recomputed": 0.7226666666666667,
+    "model_sha256": "26ba40ea037c2ed09939d2e35300b022c941a36acb604a87bc9b6f4a9f87395f",
+    "prediction_aggregate_verified": true,
+    "pooled_accuracy": 0.7371428571428571,
+    "correct_rows": 258
+  },
+  "160": {
+    "step": 160,
+    "predictions": 350,
+    "unique_ids": 350,
+    "exact_benchmark_ids": true,
+    "all_export_hashes_match": true,
+    "exported_step": 160,
+    "selected_step": 80,
+    "merged": true,
+    "lora_b_nonzero": 186,
+    "lora_b_norm": 1.9348262324352163,
+    "overall_recomputed": 0.7746666666666666,
+    "model_sha256": "f58f0b35a0a069eb064055c72db9152ad3e58587e346c1bbb8c4026718db6d70",
+    "prediction_aggregate_verified": true,
+    "pooled_accuracy": 0.78,
+    "correct_rows": 273
+  },
+  "training_metric_rows": 161,
+  "canonical_selected_step": 80,
+  "canonical_gpu_lease_seconds": 1481,
+  "auxiliary_gpu_lease_seconds": 135,
+  "total_gpu_lease_seconds": 1616
+}
