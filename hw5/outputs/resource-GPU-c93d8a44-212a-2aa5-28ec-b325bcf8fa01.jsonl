@@ -1,0 +1,6 @@
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-c93d8a44-212a-2aa5-28ec-b325bcf8fa01","start_epoch":1793458861,"pid":2337983,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1793459505,"elapsed_seconds":644,"exit_code":1}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-c93d8a44-212a-2aa5-28ec-b325bcf8fa01","start_epoch":1793459803,"pid":2358745,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1793461955,"elapsed_seconds":2152,"exit_code":0}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-c93d8a44-212a-2aa5-28ec-b325bcf8fa01","start_epoch":1793462069,"pid":2405858,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1793462169,"elapsed_seconds":100,"exit_code":0}

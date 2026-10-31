@@ -1,0 +1,14 @@
+[
+  {
+    "repo_id": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "repo_type": "model",
+    "path": "/home/mekashirskiy/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc"
+  },
+  {
+    "repo_id": "Team-ACE/ToolACE",
+    "revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+    "repo_type": "dataset",
+    "path": "/home/mekashirskiy/.cache/huggingface/hub/datasets--Team-ACE--ToolACE/snapshots/6bda777c88d21e5a204703c1ee45597a8fa4f734"
+  }
+]

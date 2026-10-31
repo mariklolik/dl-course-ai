@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "cuda_visible_devices": "",
+  "gpu_initialized": false,
+  "rows": 2176,
+  "sample_rows": 120,
+  "sample_failures": 0,
+  "failures": 0,
+  "statistics": {
+    "train:call": 1536,
+    "empty_tools": 66,
+    "parallel_rows": 674,
+    "string_arguments": 5404,
+    "nested_arguments": 1648,
+    "train:no_call": 512,
+    "boolean_arguments": 33,
+    "validation:call": 96,
+    "validation:no_call": 32
+  },
+  "numeric_parser_normalizations": 160,
+  "tokenizer_eos": 248046,
+  "model_eos": 248044,
+  "eos_decoded": {
+    "248044": "<|endoftext|>",
+    "248046": "<|im_end|>"
+  },
+  "no_call_text": "Synthetic nonempty clarification; scoring checks no-call structure, not prose semantics.",
+  "data_sha256": {
+    "train": "557640af714b88370a1e009c6da60e0ca8182278d4899675e7b5fe8f0f0e03a4",
+    "validation": "e9d3c9208f4fc8818a34608bbb8c598f61ca916277c239401d0140f84e5163fc"
+  },
+  "reward_sha256": "cd63c53244570bea4098ff2314324707dea15bb26767c70fd45639d4921dc975",
+  "versions": {
+    "vllm": "0.22.0",
+    "transformers": "5.9.0",
+    "trl": "1.16.0"
+  },
+  "failure_details": [],
+  "before_fixes_sample_failures": 22,
+  "fixed_discrepancies": {
+    "empty_tools_request_rejection_rows": 66,
+    "numeric_parser_normalization_rows": 160,
+    "different_model_and_tokenizer_eos": true
+  }
+}

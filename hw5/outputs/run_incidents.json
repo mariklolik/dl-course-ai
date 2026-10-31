@@ -1,0 +1,45 @@
+{
+  "scope": "Infrastructure and smoke incidents; these are not additional trained configurations",
+  "remote_root": "avi-gn-fsk34:/home/mekashirskiy/dl-course-hw5-20261031/",
+  "incidents": [
+    {
+      "stage": "baseline startup",
+      "symptom": "vLLM0.22 int(CUDA_VISIBLE_DEVICES) rejects a GPU UUID",
+      "fix": "Keep dual UUID locks; use numeric device visibility with PCI order and assert the visible Torch UUID matches the lease",
+      "raw_remote_log": "outputs/base/attempt1.log"
+    },
+    {
+      "stage": "device identity preflight",
+      "symptom": "Torch UUID omits the GPU- prefix used by NVML",
+      "fix": "Normalize the GPU- prefix before identity assertion",
+      "raw_remote_log": "outputs/base/attempt2.log"
+    },
+    {
+      "stage": "baseline startup",
+      "symptom": "FlashInfer JIT could not find ninja because native venv PATH was inactive",
+      "fix": "Activate venv tools and matching CUDA compiler in the runner; evaluator unchanged",
+      "raw_remote_log": "outputs/base/attempt3.log"
+    },
+    {
+      "stage": "one-step smoke",
+      "symptom": "Finite gradient but no adapter update: first warmup learning rate was0",
+      "fix": "Two-step smoke confirmed186 nonzero LoRA B matrices; full160-step runs retain the planned warmup",
+      "evidence": "smoke_update_verification.json"
+    },
+    {
+      "stage": "RL3 parallel startup",
+      "symptom": "TRL free-port probe raced with another run; EADDRINUSE23456 before any optimizer step",
+      "fix": "Explicit MASTER_PORT29600+GPU slot; retry used29602, completed startup",
+      "raw_remote_log": "outputs/rl3/attempt1.log"
+    },
+    {
+      "stage": "RL2 training attempt1",
+      "last_completed_step": 49,
+      "reserved_seconds": 644,
+      "symptom": "Triton l2norm_bwd_kernel.cubin missing at load, file present afterward under shared vLLM AOT compile cache",
+      "diagnosis": "Transient shared-cache race is consistent with evidence; exact deleting writer is not proven. vLLM persistently overrides inductor cache root.",
+      "fix": "Retry from original base with per-slot VLLM_CACHE_ROOT, TORCHINDUCTOR_CACHE_DIR, TRITON_CACHE_DIR; no shared cache deletion",
+      "raw_remote_log": "outputs/rl2/attempt1.log"
+    }
+  ]
+}
