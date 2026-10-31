@@ -1,0 +1,39 @@
+{
+  "auxiliary_step": 80,
+  "predictions": 350,
+  "ids_exactly_match_original_bfcl": true,
+  "category_metrics_recomputed": true,
+  "group_macro_recomputed": 0.668,
+  "correct_micro_count": 253,
+  "export_files_hashes_verified": 6,
+  "canonical_hashes_unchanged": true,
+  "selected_step_unchanged": 160,
+  "lease_seconds_total_including_failed_attempts": 1420,
+  "lease_gpu_hours_total_including_failed_attempts": 0.39444444444444443,
+  "released_receipts": [
+    {
+      "state": "RELEASED",
+      "end_epoch": 1793458909,
+      "elapsed_seconds": 42,
+      "exit_code": 1
+    },
+    {
+      "state": "RELEASED",
+      "end_epoch": 1793460239,
+      "elapsed_seconds": 1243,
+      "exit_code": 0
+    },
+    {
+      "state": "RELEASED",
+      "end_epoch": 1793460445,
+      "elapsed_seconds": 135,
+      "exit_code": 0
+    }
+  ],
+  "training_reward_window_means": {
+    "1-80": 0.7247268604114652,
+    "81-160": 0.7659824147820473
+  },
+  "predictions_sha256": "812755ecd255c123be1fa6f02233431390f28a46122ea2be50ced53a66ed3e37",
+  "metrics_sha256": "19d86ced6a8191386ab1df8d5ebf61f4b825bfd5472477b13d48d67a6c65eec0"
+}

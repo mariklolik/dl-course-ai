@@ -1,0 +1,18 @@
+{
+  "predictions": 350,
+  "ids_exactly_match_original_bfcl": true,
+  "category_metrics_recomputed": true,
+  "group_macro_recomputed": 0.78,
+  "correct_micro_count": 279,
+  "export_files_hashes_verified": 6,
+  "selected_step": 160,
+  "selected_lora_B_tensors": 186,
+  "selected_lora_B_nonzero_tensors": 186,
+  "selected_lora_B_squared_norm": 2.957294494866801,
+  "adapter_tensors_all_finite": true,
+  "training_log_values_all_finite": true,
+  "predictions_sha256": "6f395980badb7d38f3537c83ecb6a6dfa105260c243ef16c55548340c76025be",
+  "metrics_sha256": "9a48e3e35eb29f2e581b5b402c2cdd1097dbc11c6322d436de1c867c51e6b71f",
+  "benchmark_sha256": "b257ffe2c539897123706ed2211f9ad0e68b8f8fbad7b523ba5a3fcca2a457b2",
+  "evaluate_sha256": "62411a6f1bd790bd54f27fb09e567075b5b27510d126ebe145e72b8319abc7b6"
+}

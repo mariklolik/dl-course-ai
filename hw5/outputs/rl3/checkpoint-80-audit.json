@@ -1,0 +1,48 @@
+{
+  "step": 80,
+  "lora_B_tensors": 186,
+  "lora_B_nonzero_tensors": 186,
+  "lora_B_squared_norm": 1.2776049660787976,
+  "all_adapter_tensors_finite": true,
+  "log_rows": 80,
+  "last_log": {
+    "clip_ratio/high_max": 0.0,
+    "clip_ratio/high_mean": 0.0,
+    "clip_ratio/low_mean": 0.0,
+    "clip_ratio/low_min": 0.0,
+    "clip_ratio/region_mean": 0.0,
+    "completions/clipped_ratio": 0.0,
+    "completions/max_length": 357.0,
+    "completions/max_terminated_length": 357.0,
+    "completions/mean_length": 107.8125,
+    "completions/mean_terminated_length": 107.8125,
+    "completions/min_length": 47.0,
+    "completions/min_terminated_length": 47.0,
+    "entropy": 0.41918881982564926,
+    "epoch": 0.15625,
+    "frac_reward_zero_std": 0.75,
+    "grad_norm": 0.005713779013603926,
+    "kl": 0.03196434397250414,
+    "learning_rate": 5e-05,
+    "loss": -5.619486910291016e-05,
+    "num_tokens": 1118700.0,
+    "reward": 0.6412500143051147,
+    "reward_std": 0.42429354786872864,
+    "rewards/tool_shaped/mean": 0.6412500143051147,
+    "rewards/tool_shaped/std": 0.42429354786872864,
+    "sampling/importance_sampling_ratio/max": 2.1891157627105713,
+    "sampling/importance_sampling_ratio/mean": 1.0667933225631714,
+    "sampling/importance_sampling_ratio/min": 0.1857849657535553,
+    "sampling/sampling_logp_difference/max": 0.2992863655090332,
+    "sampling/sampling_logp_difference/mean": 0.014458099380135536,
+    "step": 80,
+    "step_time": 28.496951615437865
+  },
+  "validation": [
+    {
+      "step": 80,
+      "accuracy": 0.7109375
+    }
+  ],
+  "adapter_sha256": "b8b71bf0fae52808a15354aba4f4f427928a06530a8a0f4dd61d5813730508e7"
+}
