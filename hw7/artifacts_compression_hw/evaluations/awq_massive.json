@@ -1,0 +1,42 @@
+{
+  "quality": 0.31414258629707115,
+  "intent_accuracy": 0.40234375,
+  "slot_micro_f1": 0.22594142259414227,
+  "frame_exact_match": 0.12109375,
+  "valid_json_rate": 0.56640625,
+  "n": 256,
+  "run": "awq_massive",
+  "model": "artifacts_compression_hw/quantized/awq_massive",
+  "revision": null,
+  "seconds": 655.3119508251548,
+  "seed": 42,
+  "batch_size": 4,
+  "max_new_tokens": 128,
+  "thinking": false,
+  "decoding": "greedy",
+  "use_model_defaults": false,
+  "do_sample": false,
+  "predictions_sha256": "e75c5812793dd602c986aa412d31eaf02daec469e6f0b61cf8e16ae2f8a1d467",
+  "dev_sha256": "bfc837903a1c0ea8f939b5060dc5660f563edb1b12334f64679222a078c4316b",
+  "quantization_state": {
+    "weight_modules": 252,
+    "weight_scale_modules": 252,
+    "input_modules": 0,
+    "wrapped_input_modules": 0,
+    "enabled_input_modules": 0,
+    "input_bits": {},
+    "input_dynamic": {},
+    "input_status": {},
+    "static_input_modules": 0,
+    "static_input_scale_modules": 0,
+    "input_scale_modules": 0
+  },
+  "run_compressed": false,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_uuid": "261a5730-15f4-f59a-56c5-4db4cfc8dddb",
+  "versions": {
+    "torch": "2.8.0",
+    "transformers": "4.55.2",
+    "compressed-tensors": "0.12.2"
+  }
+}

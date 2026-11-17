@@ -1,0 +1,48 @@
+{
+  "quality": 0.4097303806390977,
+  "intent_accuracy": 0.59765625,
+  "slot_micro_f1": 0.22180451127819548,
+  "frame_exact_match": 0.15625,
+  "valid_json_rate": 0.8125,
+  "n": 256,
+  "run": "gptq_lastbf16",
+  "model": "artifacts_compression_hw/quantized/gptq_lastbf16",
+  "revision": null,
+  "seconds": 570.8802649239078,
+  "seed": 42,
+  "batch_size": 4,
+  "max_new_tokens": 128,
+  "thinking": false,
+  "decoding": "greedy",
+  "use_model_defaults": false,
+  "do_sample": false,
+  "predictions_sha256": "2fa90a44fc83e22310f5c50ed526fea7196ff13a4e3a4ca576170be51a36fb50",
+  "dev_sha256": "bfc837903a1c0ea8f939b5060dc5660f563edb1b12334f64679222a078c4316b",
+  "quantization_state": {
+    "weight_modules": 245,
+    "weight_scale_modules": 245,
+    "input_modules": 0,
+    "wrapped_input_modules": 0,
+    "enabled_input_modules": 0,
+    "input_bits": {},
+    "input_dynamic": {},
+    "input_status": {},
+    "static_input_modules": 0,
+    "static_input_scale_modules": 0,
+    "input_scale_modules": 0,
+    "weight_dtypes": {
+      "torch.bfloat16": 245
+    }
+  },
+  "run_compressed": false,
+  "initial_load_run_compressed": false,
+  "explicit_decompress_model": false,
+  "effective_eval_layout": "bf16_weights_with_fake_quant",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_uuid": "dae34d9f-f1b8-181c-aef6-671bbb69a2e7",
+  "versions": {
+    "torch": "2.8.0",
+    "transformers": "4.55.2",
+    "compressed-tensors": "0.12.2"
+  }
+}
