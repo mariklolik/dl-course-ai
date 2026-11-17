@@ -1,0 +1,99 @@
+{
+  "repo_id": "mariklolik228/dl-course-hw7-compression",
+  "revision": "f29959df1c08497cf22a6f8bd42337258c2c5555",
+  "files": {
+    "quantized/sq_a05/LICENSE": {
+      "size": 11344,
+      "sha256": "c156170b718ec29139d3653d40ed1986fd92fb7e0959b5c71f3c48f62e6636f4"
+    },
+    "quantized/sq_a05/README.md": {
+      "size": 1097,
+      "sha256": "ec3efcbbeddd15016d6d22d82ffa77aff7b81e4345e2ccbe7d3d5eab0db992d0"
+    },
+    "quantized/sq_a05/added_tokens.json": {
+      "size": 707,
+      "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+    },
+    "quantized/sq_a05/chat_template.jinja": {
+      "size": 4168,
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    "quantized/sq_a05/config.json": {
+      "size": 2713,
+      "sha256": "0a84157463cda584df052929fa82db7ef03b76a91386d022f872cc713d15850a"
+    },
+    "quantized/sq_a05/generation_config.json": {
+      "size": 214,
+      "sha256": "a11456f04db85ae8010eca3b91c5df7c9a49261571c3e62ae7d88b3189a55c30"
+    },
+    "quantized/sq_a05/merges.txt": {
+      "size": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "quantized/sq_a05/model-00001-of-00010.safetensors": {
+      "size": 1244659856,
+      "sha256": "fdee39d53215b663e100f1fd3c398a9a5c92af5e570deecdaaa52eda120e8b12"
+    },
+    "quantized/sq_a05/model-00002-of-00010.safetensors": {
+      "size": 990352208,
+      "sha256": "150a29262eb0cfbc5763d1e546c6fa039b447af5a7534fda1a0013bf31ce4363"
+    },
+    "quantized/sq_a05/model-00003-of-00010.safetensors": {
+      "size": 981959768,
+      "sha256": "6a4bde44bfe8e1cc83e4f7022cb494fbc78dd3e3d78e80dcb06fe8690643b2a6"
+    },
+    "quantized/sq_a05/model-00004-of-00010.safetensors": {
+      "size": 965173520,
+      "sha256": "1c15e3d05de30233cce4eecedae5461505014d1d311f7707074f2b959c76c08f"
+    },
+    "quantized/sq_a05/model-00005-of-00010.safetensors": {
+      "size": 965173520,
+      "sha256": "2add110c192bf6394afdc594a1d3638abec0ede81a61facf13f7fe17ae87be97"
+    },
+    "quantized/sq_a05/model-00006-of-00010.safetensors": {
+      "size": 965173520,
+      "sha256": "47cc1860dea76db03508cce32b287f500ad1e596c3368b46f4a05163e27a5bf3"
+    },
+    "quantized/sq_a05/model-00007-of-00010.safetensors": {
+      "size": 965173520,
+      "sha256": "bdac66362b5f8e7e3ff635c094c8a6d32083d035c80e36eb50298bdbc287eb90"
+    },
+    "quantized/sq_a05/model-00008-of-00010.safetensors": {
+      "size": 965173520,
+      "sha256": "03849e1803b12325b371045fef56eaaa74919456cd31d105e2daf836e82dcd4b"
+    },
+    "quantized/sq_a05/model-00009-of-00010.safetensors": {
+      "size": 1244659840,
+      "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
+    },
+    "quantized/sq_a05/model-00010-of-00010.safetensors": {
+      "size": 151077848,
+      "sha256": "c160684dafa456602866967a557eaf9feceb036b4ec5fb248eb4464a2a3111ab"
+    },
+    "quantized/sq_a05/model.safetensors.index.json": {
+      "size": 54875,
+      "sha256": "22174ec17488cc298e8fa774f09c946dd6f912ebe6bebe6c70cee6aa10d0c3ba"
+    },
+    "quantized/sq_a05/recipe.yaml": {
+      "size": 1191,
+      "sha256": "713119442c5caf6278c710670f20371d5c605aa58ffc2d510752c1be46ff5551"
+    },
+    "quantized/sq_a05/special_tokens_map.json": {
+      "size": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    "quantized/sq_a05/tokenizer.json": {
+      "size": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "quantized/sq_a05/tokenizer_config.json": {
+      "size": 5404,
+      "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0"
+    },
+    "quantized/sq_a05/vocab.json": {
+      "size": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "anonymous_readback": true
+}

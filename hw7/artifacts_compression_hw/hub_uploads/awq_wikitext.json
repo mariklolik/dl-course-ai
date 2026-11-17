@@ -1,0 +1,83 @@
+{
+  "repo_id": "mariklolik228/dl-course-hw7-compression",
+  "revision": "54e90403c01fbfbf40fd9a9bbfffdf688b287a74",
+  "files": {
+    "quantized/awq_wikitext/LICENSE": {
+      "size": 11344,
+      "sha256": "c156170b718ec29139d3653d40ed1986fd92fb7e0959b5c71f3c48f62e6636f4"
+    },
+    "quantized/awq_wikitext/README.md": {
+      "size": 821,
+      "sha256": "dc09f6f8822f52d94c5162a973d365e32cc2a590ce9de51f6348047b50c77cff"
+    },
+    "quantized/awq_wikitext/added_tokens.json": {
+      "size": 707,
+      "sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+    },
+    "quantized/awq_wikitext/chat_template.jinja": {
+      "size": 4168,
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    "quantized/awq_wikitext/config.json": {
+      "size": 2415,
+      "sha256": "6a0916407148607bb78fbcb60f296fc4e93b4bf59b4776c534fcd14afabeef8a"
+    },
+    "quantized/awq_wikitext/generation_config.json": {
+      "size": 214,
+      "sha256": "a11456f04db85ae8010eca3b91c5df7c9a49261571c3e62ae7d88b3189a55c30"
+    },
+    "quantized/awq_wikitext/merges.txt": {
+      "size": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "quantized/awq_wikitext/model-00001-of-00006.safetensors": {
+      "size": 1244659856,
+      "sha256": "fdee39d53215b663e100f1fd3c398a9a5c92af5e570deecdaaa52eda120e8b12"
+    },
+    "quantized/awq_wikitext/model-00002-of-00006.safetensors": {
+      "size": 995034608,
+      "sha256": "95977984651b5e0460dc49b45d44f26bb4a73ab58f30e1e4f4abd627026982e9"
+    },
+    "quantized/awq_wikitext/model-00003-of-00006.safetensors": {
+      "size": 995034736,
+      "sha256": "7e1f2f0673b5359efabd60bb2b4434c6da6ea58a6638531a12f7cdcffffeda03"
+    },
+    "quantized/awq_wikitext/model-00004-of-00006.safetensors": {
+      "size": 995034736,
+      "sha256": "db61deaac5bd759a1c278b20522c31aebf52806c235ae8ddf5141f19c6cae467"
+    },
+    "quantized/awq_wikitext/model-00005-of-00006.safetensors": {
+      "size": 1244659840,
+      "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
+    },
+    "quantized/awq_wikitext/model-00006-of-00006.safetensors": {
+      "size": 597029000,
+      "sha256": "e80a17793a9dfb9280cda01681a6dfe2388c43d3c334036de3d4c95efcb3dc67"
+    },
+    "quantized/awq_wikitext/model.safetensors.index.json": {
+      "size": 78601,
+      "sha256": "94b10c5decc4af94f744038eb9f72c0290ee5ef4843f135360e3289280b35517"
+    },
+    "quantized/awq_wikitext/recipe.yaml": {
+      "size": 980,
+      "sha256": "8875efd1da4be5d189af8cf0749a8a887829ad3eb94eeef8ec60bf38d106ce80"
+    },
+    "quantized/awq_wikitext/special_tokens_map.json": {
+      "size": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    "quantized/awq_wikitext/tokenizer.json": {
+      "size": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "quantized/awq_wikitext/tokenizer_config.json": {
+      "size": 5404,
+      "sha256": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0"
+    },
+    "quantized/awq_wikitext/vocab.json": {
+      "size": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "anonymous_readback": true
+}
