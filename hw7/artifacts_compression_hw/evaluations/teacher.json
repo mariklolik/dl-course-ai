@@ -1,0 +1,42 @@
+{
+  "quality": 0.5822944370567376,
+  "intent_accuracy": 0.78515625,
+  "slot_micro_f1": 0.37943262411347517,
+  "frame_exact_match": 0.31640625,
+  "valid_json_rate": 0.9765625,
+  "n": 256,
+  "run": "teacher",
+  "model": "Qwen/Qwen3-32B",
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "seconds": 184.75020894873887,
+  "seed": 42,
+  "batch_size": 4,
+  "max_new_tokens": 128,
+  "thinking": false,
+  "decoding": "greedy",
+  "use_model_defaults": false,
+  "do_sample": false,
+  "predictions_sha256": "0545313a408d169a1b800849bf48a200557ac2094016d01ad6776d643f9ccbe6",
+  "dev_sha256": "bfc837903a1c0ea8f939b5060dc5660f563edb1b12334f64679222a078c4316b",
+  "quantization_state": {
+    "weight_modules": 0,
+    "weight_scale_modules": 0,
+    "input_modules": 0,
+    "wrapped_input_modules": 0,
+    "enabled_input_modules": 0,
+    "input_bits": {},
+    "input_dynamic": {},
+    "input_status": {},
+    "static_input_modules": 0,
+    "static_input_scale_modules": 0,
+    "input_scale_modules": 0
+  },
+  "run_compressed": false,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_uuid": "dae34d9f-f1b8-181c-aef6-671bbb69a2e7",
+  "versions": {
+    "torch": "2.8.0",
+    "transformers": "4.55.2",
+    "compressed-tensors": "0.12.2"
+  }
+}

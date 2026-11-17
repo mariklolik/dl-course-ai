@@ -1,0 +1,16 @@
+{
+  "repo_id": "mariklolik228/dl-course-hw7-compression",
+  "revision": "a6a6cac40b8e34b03798892199b225e34c685837",
+  "selected_run": "s1024_e3",
+  "files": 29,
+  "metrics": {
+    "quality": 0.6113771281362007,
+    "intent_accuracy": 0.7890625,
+    "slot_micro_f1": 0.4336917562724014,
+    "frame_exact_match": 0.33984375,
+    "valid_json_rate": 0.9765625,
+    "n": 256
+  },
+  "equal_metrics": true,
+  "equal_predictions": true
+}

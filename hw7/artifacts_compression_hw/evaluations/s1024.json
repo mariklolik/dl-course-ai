@@ -1,0 +1,42 @@
+{
+  "quality": 0.6059274911032029,
+  "intent_accuracy": 0.78125,
+  "slot_micro_f1": 0.4306049822064057,
+  "frame_exact_match": 0.33984375,
+  "valid_json_rate": 0.98046875,
+  "n": 256,
+  "run": "s1024",
+  "model": "artifacts_compression_hw/students/s1024",
+  "revision": null,
+  "seconds": 82.35601094085723,
+  "seed": 42,
+  "batch_size": 4,
+  "max_new_tokens": 128,
+  "thinking": false,
+  "decoding": "greedy",
+  "use_model_defaults": false,
+  "do_sample": false,
+  "predictions_sha256": "3708ebd7e10651e1a7adac12bbce73144e9b5f3fa7be70084288a31329349f64",
+  "dev_sha256": "bfc837903a1c0ea8f939b5060dc5660f563edb1b12334f64679222a078c4316b",
+  "quantization_state": {
+    "weight_modules": 0,
+    "weight_scale_modules": 0,
+    "input_modules": 0,
+    "wrapped_input_modules": 0,
+    "enabled_input_modules": 0,
+    "input_bits": {},
+    "input_dynamic": {},
+    "input_status": {},
+    "static_input_modules": 0,
+    "static_input_scale_modules": 0,
+    "input_scale_modules": 0
+  },
+  "run_compressed": false,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_uuid": "dae34d9f-f1b8-181c-aef6-671bbb69a2e7",
+  "versions": {
+    "torch": "2.8.0",
+    "transformers": "4.55.2",
+    "compressed-tensors": "0.12.2"
+  }
+}
