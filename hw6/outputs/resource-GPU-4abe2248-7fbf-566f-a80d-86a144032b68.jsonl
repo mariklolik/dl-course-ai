@@ -1,0 +1,16 @@
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794864336,"pid":3784365,"limit_seconds":18000}
+{"state":"RELEASED","end_epoch":1794864400,"elapsed_seconds":64,"exit_code":137}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794864410,"pid":3786037,"limit_seconds":18000}
+{"state":"RELEASED","end_epoch":1794864518,"elapsed_seconds":108,"exit_code":1}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794864569,"pid":3788973,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1794866775,"elapsed_seconds":2206,"exit_code":0}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794866780,"pid":3809782,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1794868996,"elapsed_seconds":2216,"exit_code":0}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794869004,"pid":3847500,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1794869852,"elapsed_seconds":848,"exit_code":0}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794869859,"pid":3873542,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1794874005,"elapsed_seconds":4146,"exit_code":0}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794874194,"pid":3989802,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1794876405,"elapsed_seconds":2211,"exit_code":0}
+{"state":"RUNNING","host":"avi-gn-fsk34","gpu":"GPU-4abe2248-7fbf-566f-a80d-86a144032b68","start_epoch":1794876423,"pid":4021912,"limit_seconds":10800}
+{"state":"RELEASED","end_epoch":1794876762,"elapsed_seconds":339,"exit_code":0}

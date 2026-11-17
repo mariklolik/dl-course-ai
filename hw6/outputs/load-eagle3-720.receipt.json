@@ -1,0 +1,24 @@
+{
+  "command": [
+    "bash",
+    "load_test.sh",
+    "720",
+    "outputs/load-eagle3-720"
+  ],
+  "exit_code": 0,
+  "mean_s": 32.33447417522784,
+  "p90_s": 55.873370895399994,
+  "completed": 3599,
+  "failed": 0,
+  "mean_output_tokens": 420.258682967491,
+  "throughput_rps": 9.935389908788512,
+  "complete": true,
+  "server_running_avg": 31.246575342465754,
+  "server_waiting_avg": 287.2520547945206,
+  "spec_draft_tokens": 2323149.0,
+  "spec_accepted_tokens": 739687.0,
+  "spec_draft_steps": 774383.0,
+  "prefix_cache_token_hit_rate": 0.008227336044788631,
+  "spec_acceptance_rate": 0.31839843247247596,
+  "sla_pass": false
+}

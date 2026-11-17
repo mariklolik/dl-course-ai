@@ -1,0 +1,17 @@
+{
+  "best_fixed": "eagle3",
+  "best_fixed_mean_s": 1.9101766673531249,
+  "paired_plain": "seq32_chunk2048",
+  "paired_spec": "eagle3",
+  "common_args": [
+    "exec",
+    "bash",
+    "serve.sh",
+    "--max-num-seqs",
+    "32",
+    "--max-num-batched-tokens",
+    "2048",
+    "$@"
+  ],
+  "selection": "minimum valid fixed120RPM mean; canonical baseline unchanged"
+}

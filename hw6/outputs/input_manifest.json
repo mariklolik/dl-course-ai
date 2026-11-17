@@ -1,0 +1,12 @@
+{
+  "requests": 640,
+  "unique_messages": 640,
+  "sha256": "67c48379e5ae2608f7ca08650fd346facdc01f766a3e8eecea6459d7cec00ebc",
+  "generation": {
+    "model": "Qwen/Qwen3-8B",
+    "seed": 42,
+    "temperature": 0,
+    "max_tokens": 512,
+    "enable_thinking": false
+  }
+}

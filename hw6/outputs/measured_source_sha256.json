@@ -1,0 +1,21 @@
+{
+  "configs/eagle5.sh": "66966ff716351823cd8ab0e5edadd2963880b2564f59d256f654a76d8683d8a8",
+  "configs/ngram5.sh": "4d0ddf37f399f821ac151fb9c1b1d4ff2451b419834ce4ce1962c91ab785a551",
+  "configs/eagle3.sh": "28950531c352016e8eede77601b43feabbf900a13f854d0137aacbb4045c8610",
+  "configs/eagle5_interactive.sh": "356d334f83fa4c8f1312ad889b93e2bd94f4158aa04fc011eaa391166eeb8755",
+  "configs/interactive.sh": "084dc74a6de4b14398317cbe4860839b85f06950862dee8eea2b3790406135e1",
+  "configs/seq32_chunk2048.sh": "a4b1418d6aeb46100c56e2cc8282ec6bdd9fa1260e8165cc251e413e75a2fd0d",
+  "configs/eagle3_seq256.sh": "33ae413341ab7d073a8aed7d2d8322ef9d21a8b5c96df04096d83332cfa71986",
+  "configs/eager32.sh": "439de009587ebf56af55871ee3bc66fa9e366b92a04a521ce3f9ce74fc9913ac",
+  "configs/seq256_chunk2048.sh": "7a3b1c58ad21cd50b01aad03d7300eecf8468d17cb858f28ed2ad12c00851deb",
+  "configs/baseline.sh": "8361c78b7a6ba7b6170c17cdb6d57ecafc5489b876aa896e6fe7aed83207e59c",
+  "configs/seq64_chunk4096.sh": "d84979fc409c5b2d8d723d4607446d33369fbcc71ead0fc955e8fbbb3e4e5408",
+  "configs/eagle5_seq256.sh": "59388cb9830569395a238f617e9eaff7c4e369f418bc966a8922711b469e56b2",
+  "configs/draft3.sh": "a086284efc988db1e811427a5202303f34a5bbf9a5f12bbf06356e86386e58f2",
+  "serve.sh": "38058abcb4fd4229eb3855979fa4482f3cc9a5c6b0bf1e5487adaa176cb72270",
+  "benchmark.sh": "f7c2def9a1881ba714778e8e6d31dee25645c5179f0fa2cbd5118184a2624c16",
+  "load_test.sh": "2f34fd386a2084f5fee4407025f583cdf2915ebb762be706fee458b5518ad3ac",
+  "run_experiments.py": "bd33bfad6a2b15bd16d5ead662811bdf6ab5022a19c854645ce14f64321c52cb",
+  "analyze.py": "8d9094d4eed6fbdb24863155f2f5f37ff6f74ec3ea09254856d60a21210ae573",
+  "data/requests.jsonl": "67c48379e5ae2608f7ca08650fd346facdc01f766a3e8eecea6459d7cec00ebc"
+}

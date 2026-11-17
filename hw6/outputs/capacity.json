@@ -1,0 +1,6 @@
+{
+  "config": "eagle3",
+  "pass_rpm": 600,
+  "fail_rpm": 630,
+  "relative_gap": 0.05
+}

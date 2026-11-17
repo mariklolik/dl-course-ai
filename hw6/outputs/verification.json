@@ -1,0 +1,122 @@
+{
+  "created_utc": "2026-11-17T01:08:29.197951+00:00",
+  "checks": {
+    "benchmark.sh": "bash -n OK",
+    "configs/baseline.sh": "bash -n OK",
+    "configs/draft3.sh": "bash -n OK",
+    "configs/eager32.sh": "bash -n OK",
+    "configs/eagle3.sh": "bash -n OK",
+    "configs/eagle3_seq256.sh": "bash -n OK",
+    "configs/eagle5.sh": "bash -n OK",
+    "configs/eagle5_interactive.sh": "bash -n OK",
+    "configs/eagle5_seq256.sh": "bash -n OK",
+    "configs/interactive.sh": "bash -n OK",
+    "configs/ngram5.sh": "bash -n OK",
+    "configs/seq256_chunk2048.sh": "bash -n OK",
+    "configs/seq32_chunk2048.sh": "bash -n OK",
+    "configs/seq64_chunk4096.sh": "bash -n OK",
+    "load_test.sh": "bash -n OK",
+    "outputs/orchestration/final-commands.sh": "bash -n OK",
+    "outputs/orchestration/k5-after-refine.sh": "bash -n OK",
+    "outputs/orchestration/k5-commands.sh": "bash -n OK",
+    "outputs/orchestration/large-commands.sh": "bash -n OK",
+    "outputs/orchestration/sweep-load-commands.sh": "bash -n OK",
+    "serve.sh": "bash -n OK",
+    "analyze.py": "py_compile OK; no docstrings; <=300 lines",
+    "report.py": "py_compile OK; no docstrings; <=300 lines",
+    "run_experiments.py": "py_compile OK; no docstrings; <=300 lines",
+    "test_results.py": "py_compile OK; no docstrings; <=300 lines",
+    "unittest": "----------------------------------------------------------------------\nRan 7 tests in 0.003s\n\nOK"
+  },
+  "phase_counts": {
+    "fixed": 10,
+    "large": 8,
+    "large5": 2,
+    "load": 7,
+    "repeat": 2,
+    "sweep": 10
+  },
+  "profiling_requests": 41923,
+  "profiling_errors": 1353,
+  "cache_resets": {
+    "baseline": {
+      "measurements": 2,
+      "successful_resets": 4
+    },
+    "draft3": {
+      "measurements": 1,
+      "successful_resets": 2
+    },
+    "eager32": {
+      "measurements": 1,
+      "successful_resets": 2
+    },
+    "eagle3": {
+      "measurements": 14,
+      "successful_resets": 28
+    },
+    "eagle5": {
+      "measurements": 1,
+      "successful_resets": 2
+    },
+    "eagle5_interactive": {
+      "measurements": 1,
+      "successful_resets": 2
+    },
+    "interactive": {
+      "measurements": 1,
+      "successful_resets": 2
+    },
+    "ngram5": {
+      "measurements": 1,
+      "successful_resets": 2
+    },
+    "seq32_chunk2048": {
+      "measurements": 6,
+      "successful_resets": 12
+    },
+    "seq64_chunk4096": {
+      "measurements": 1,
+      "successful_resets": 2
+    },
+    "eagle3_seq256": {
+      "measurements": 4,
+      "successful_resets": 8
+    },
+    "seq256_chunk2048": {
+      "measurements": 4,
+      "successful_resets": 8
+    },
+    "eagle5_seq256": {
+      "measurements": 2,
+      "successful_resets": 4
+    }
+  },
+  "gpu_uuid_consistent": true,
+  "gpu_resource_released": true,
+  "source_sha256": {
+    "Dockerfile": "fdc3bd20a2458e1332425e1974bb10d2019207f2f0c1d3d62a5276ead627d20e",
+    "README.md": "447e9913a9c80fc05b3e627f8c0ce687ecc4a100ec72eb07af1b60bf0d4c75fe",
+    "analyze.py": "8d9094d4eed6fbdb24863155f2f5f37ff6f74ec3ea09254856d60a21210ae573",
+    "benchmark.sh": "f7c2def9a1881ba714778e8e6d31dee25645c5179f0fa2cbd5118184a2624c16",
+    "configs/baseline.sh": "8361c78b7a6ba7b6170c17cdb6d57ecafc5489b876aa896e6fe7aed83207e59c",
+    "configs/draft3.sh": "a086284efc988db1e811427a5202303f34a5bbf9a5f12bbf06356e86386e58f2",
+    "configs/eager32.sh": "439de009587ebf56af55871ee3bc66fa9e366b92a04a521ce3f9ce74fc9913ac",
+    "configs/eagle3.sh": "28950531c352016e8eede77601b43feabbf900a13f854d0137aacbb4045c8610",
+    "configs/eagle3_seq256.sh": "33ae413341ab7d073a8aed7d2d8322ef9d21a8b5c96df04096d83332cfa71986",
+    "configs/eagle5.sh": "66966ff716351823cd8ab0e5edadd2963880b2564f59d256f654a76d8683d8a8",
+    "configs/eagle5_interactive.sh": "356d334f83fa4c8f1312ad889b93e2bd94f4158aa04fc011eaa391166eeb8755",
+    "configs/eagle5_seq256.sh": "59388cb9830569395a238f617e9eaff7c4e369f418bc966a8922711b469e56b2",
+    "configs/interactive.sh": "084dc74a6de4b14398317cbe4860839b85f06950862dee8eea2b3790406135e1",
+    "configs/ngram5.sh": "4d0ddf37f399f821ac151fb9c1b1d4ff2451b419834ce4ce1962c91ab785a551",
+    "configs/seq256_chunk2048.sh": "7a3b1c58ad21cd50b01aad03d7300eecf8468d17cb858f28ed2ad12c00851deb",
+    "configs/seq32_chunk2048.sh": "a4b1418d6aeb46100c56e2cc8282ec6bdd9fa1260e8165cc251e413e75a2fd0d",
+    "configs/seq64_chunk4096.sh": "d84979fc409c5b2d8d723d4607446d33369fbcc71ead0fc955e8fbbb3e4e5408",
+    "data/requests.jsonl": "67c48379e5ae2608f7ca08650fd346facdc01f766a3e8eecea6459d7cec00ebc",
+    "load_test.sh": "2f34fd386a2084f5fee4407025f583cdf2915ebb762be706fee458b5518ad3ac",
+    "report.py": "b98bf22ced0fc1200522b1661db01f065837f095aa37e23b49b945ee1e531311",
+    "run_experiments.py": "bd33bfad6a2b15bd16d5ead662811bdf6ab5022a19c854645ce14f64321c52cb",
+    "serve.sh": "38058abcb4fd4229eb3855979fa4482f3cc9a5c6b0bf1e5487adaa176cb72270",
+    "test_results.py": "aeabb2cfc9da30a3c99de3c3963f6a2b38df9ff9f17dcbd6ce76ce36e19894c7"
+  }
+}

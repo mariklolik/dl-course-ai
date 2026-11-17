@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-17T00:32:13.230420+00:00",
+  "config": "eagle5_seq256",
+  "rpm": [
+    240,
+    960
+  ],
+  "paired_plain": "seq256_chunk2048",
+  "reuse_plain_group": "large",
+  "reason": "k3 positive P90 speedup through3840; k5 adds proposal/verification work with small increase in accepted tokens per draft observed fixed120; expect lower speedup under large active batches",
+  "selection_unchanged": "eagle3 seq32 chunk2048"
+}
