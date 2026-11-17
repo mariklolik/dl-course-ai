@@ -1,0 +1,21 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/repeat-baseline-120",
+    "120"
+  ],
+  "exit_code": 0,
+  "mean_s": 3.263020248504687,
+  "p90_s": 4.2296776185,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 419.69375,
+  "throughput_rps": 1.976984066832423,
+  "complete": true,
+  "spec_draft_tokens": 0,
+  "spec_accepted_tokens": 0,
+  "spec_draft_steps": 0,
+  "spec_acceptance_rate": null,
+  "sla_pass": true
+}

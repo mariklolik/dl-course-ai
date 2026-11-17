@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/fixed-eagle5_interactive-120",
+    "120"
+  ],
+  "exit_code": 0,
+  "mean_s": 1.9755916227078123,
+  "p90_s": 3.281903224300001,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 420.1421875,
+  "throughput_rps": 1.9878885144189518,
+  "complete": true,
+  "sla_pass": true
+}

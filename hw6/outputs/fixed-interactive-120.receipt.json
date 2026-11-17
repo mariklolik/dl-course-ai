@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/fixed-interactive-120",
+    "120"
+  ],
+  "exit_code": 0,
+  "mean_s": 3.26918828455625,
+  "p90_s": 4.2275121828,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 420.20625,
+  "throughput_rps": 1.976992459236171,
+  "complete": true,
+  "sla_pass": true
+}

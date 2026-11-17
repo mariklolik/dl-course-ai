@@ -1,0 +1,17 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/fixed-seq64_chunk4096-120",
+    "120"
+  ],
+  "exit_code": 0,
+  "mean_s": 3.269476786417188,
+  "p90_s": 4.243347457900001,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 419.96875,
+  "throughput_rps": 1.9769684089942972,
+  "complete": true,
+  "sla_pass": true
+}

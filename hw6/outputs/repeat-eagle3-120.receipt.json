@@ -1,0 +1,21 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/repeat-eagle3-120",
+    "120"
+  ],
+  "exit_code": 0,
+  "mean_s": 1.9178727271796874,
+  "p90_s": 3.0083942751999997,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 419.625,
+  "throughput_rps": 1.9875940136004178,
+  "complete": true,
+  "spec_draft_tokens": 413808.0,
+  "spec_accepted_tokens": 130879.0,
+  "spec_draft_steps": 137936.0,
+  "spec_acceptance_rate": 0.31627953060356495,
+  "sla_pass": true
+}
