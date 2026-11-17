@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.benchmark/
+.report/
+.work/
+outputs/*/
+outputs/*.log
