@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.report/
+.work/
+artifacts_compression_hw/quantized/
+artifacts_compression_hw/student_sft/
+artifacts_compression_hw/students/
+artifacts_compression_hw/baseline/
+artifacts_compression_hw/teacher/
+artifacts_compression_hw/.cache/
+*.safetensors
+*.log
