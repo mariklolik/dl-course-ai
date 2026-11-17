@@ -1,0 +1,22 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/sweep-eagle3-60",
+    "60"
+  ],
+  "exit_code": 0,
+  "mean_s": 1.8190167766671874,
+  "p90_s": 2.9053659768000006,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 419.8046875,
+  "throughput_rps": 0.9969837463556102,
+  "complete": true,
+  "spec_draft_tokens": 413163.0,
+  "spec_accepted_tokens": 131190.0,
+  "spec_draft_steps": 137721.0,
+  "prefix_cache_token_hit_rate": 0.00850063063023287,
+  "spec_acceptance_rate": 0.3175260127358936,
+  "sla_pass": true
+}

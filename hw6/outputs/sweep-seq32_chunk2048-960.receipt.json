@@ -1,0 +1,22 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/sweep-seq32_chunk2048-960",
+    "960"
+  ],
+  "exit_code": 0,
+  "mean_s": 29.342067540076563,
+  "p90_s": 49.85503374800001,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 418.43125,
+  "throughput_rps": 6.784307886521572,
+  "complete": true,
+  "spec_draft_tokens": 0,
+  "spec_accepted_tokens": 0,
+  "spec_draft_steps": 0,
+  "prefix_cache_token_hit_rate": 0.009536718574083967,
+  "spec_acceptance_rate": null,
+  "sla_pass": false
+}

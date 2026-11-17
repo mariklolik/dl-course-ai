@@ -1,0 +1,25 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/large-seq256_chunk2048-1920",
+    "1920"
+  ],
+  "exit_code": 0,
+  "mean_s": 22.732315697871876,
+  "p90_s": 30.5755635238,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 419.978125,
+  "throughput_rps": 13.43169624790756,
+  "complete": true,
+  "server_running_avg": 198.30921052631578,
+  "server_running_max": 256.0,
+  "server_waiting_avg": 87.97368421052632,
+  "spec_draft_tokens": 0,
+  "spec_accepted_tokens": 0,
+  "spec_draft_steps": 0,
+  "prefix_cache_token_hit_rate": 0.007841029451286024,
+  "spec_acceptance_rate": null,
+  "sla_pass": false
+}

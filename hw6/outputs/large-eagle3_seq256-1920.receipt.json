@@ -1,0 +1,25 @@
+{
+  "command": [
+    "bash",
+    "benchmark.sh",
+    "outputs/large-eagle3_seq256-1920",
+    "1920"
+  ],
+  "exit_code": 0,
+  "mean_s": 20.856336783470315,
+  "p90_s": 28.6600199089,
+  "completed": 640,
+  "failed": 0,
+  "mean_output_tokens": 419.8109375,
+  "throughput_rps": 13.698855669058343,
+  "complete": true,
+  "server_running_avg": 173.83221476510067,
+  "server_running_max": 246.0,
+  "server_waiting_avg": 93.56375838926175,
+  "spec_draft_tokens": 413814.0,
+  "spec_accepted_tokens": 131016.0,
+  "spec_draft_steps": 137938.0,
+  "prefix_cache_token_hit_rate": 0.006993593620994909,
+  "spec_acceptance_rate": 0.31660601139642447,
+  "sla_pass": false
+}
