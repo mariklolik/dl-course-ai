@@ -1,0 +1,42 @@
+{
+  "samples": 128,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "run": "s128",
+  "smoke": true,
+  "trainable_parameters": 8190735360,
+  "total_parameters": 8190735360,
+  "seconds": 4.459521665237844,
+  "peak_allocated_bytes": 68095740416,
+  "peak_reserved_bytes": 68969037824,
+  "gpu_uuid": "dae34d9f-f1b8-181c-aef6-671bbb69a2e7",
+  "planned_tokens": 8541,
+  "target_tokens": 436,
+  "examples": 16,
+  "filtered": 0,
+  "steps": 1,
+  "label_source": "MASSIVE train gold, hardware smoke only",
+  "train_metrics": {
+    "train_runtime": 4.1982,
+    "train_samples_per_second": 3.811,
+    "train_steps_per_second": 0.238,
+    "total_flos": 387850508457984.0,
+    "train_loss": 0.6540794372558594,
+    "epoch": 1.0
+  },
+  "optimizer": {
+    "gradient_dtypes": {
+      "torch.bfloat16": 399
+    },
+    "optimizer_state_dtypes": {
+      "torch.float32": 399,
+      "torch.bfloat16": 798
+    },
+    "foreach": false,
+    "parameter_dtypes": {
+      "torch.bfloat16": 399
+    },
+    "optimizer_states": 399
+  },
+  "base_revision": "b968826d9c46dd6066d109eabc6255188de91218"
+}

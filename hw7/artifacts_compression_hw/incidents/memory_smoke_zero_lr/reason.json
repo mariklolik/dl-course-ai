@@ -1,0 +1,5 @@
+{
+  "excluded_from_update_evidence": true,
+  "reason": "One optimizer step allocated all moment states but warmup made the first learning rate zero; this run verifies memory allocation only",
+  "replacement": "training/smoke uses warmup_ratio=0, positive learning rate, and asserts changed q_proj weights"
+}

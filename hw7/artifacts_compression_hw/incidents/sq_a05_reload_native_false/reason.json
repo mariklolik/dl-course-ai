@@ -1,0 +1,8 @@
+{
+  "stage": "reload existing saved W8A8 checkpoint",
+  "failure": "Transformers4.55.2 assigns int8 into a Parameter retaining requires_grad=True when run_compressed=False",
+  "fix": "native run_compressed=True initialization then ModelCompressor.decompress_model before forward; activation fake quant retained",
+  "weight_scheme_unchanged": true,
+  "ptq_repeated": false,
+  "wrapper_validation_fix": "inspect code.co_name because functools.wraps changes __name__"
+}

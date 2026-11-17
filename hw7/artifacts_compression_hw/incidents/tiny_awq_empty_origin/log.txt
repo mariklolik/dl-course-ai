@@ -1,0 +1,43 @@
+RECIPE_OK awq_massive
+RECIPE_OK awq_wikitext
+RECIPE_OK gptq_g128
+RECIPE_OK gptq_n64
+RECIPE_OK gptq_g64
+RECIPE_OK sq_a05
+RECIPE_OK sq_a08
+RECIPE_OK gptq_lastbf16
+2026-11-17T04:36:46.427036+0300 | reset | INFO - Compression lifecycle reset
+2026-11-17T04:36:46.431858+0300 | _create_default_logger | INFO - Logging all LLM Compressor modifier-level logs to sparse_logs/17-11-2026_04.36.46.log
+2026-11-17T04:36:46.451834+0300 | on_initialize | INFO - No AWQModifier.mappings provided, inferring from model...
+0it [00:00, ?it/s]Resolving mapping 1/4 (0 skipped): : 0it [00:00, ?it/s]Resolving mapping 1/4 (0 skipped): : 1it [00:00, 1457.87it/s]
+0it [00:00, ?it/s]Resolving mapping 2/4 (0 skipped): : 0it [00:00, ?it/s]Resolving mapping 2/4 (0 skipped): : 1it [00:00, 2543.54it/s]
+0it [00:00, ?it/s]Resolving mapping 3/4 (0 skipped): : 0it [00:00, ?it/s]Resolving mapping 3/4 (0 skipped): : 1it [00:00, 1185.84it/s]
+0it [00:00, ?it/s]Resolving mapping 4/4 (0 skipped): : 0it [00:00, ?it/s]Resolving mapping 4/4 (0 skipped): : 1it [00:00, 2890.63it/s]
+2026-11-17T04:36:46.460251+0300 | initialize | INFO - Compression lifecycle initialized for 1 modifiers
+2026-11-17T04:36:46.461038+0300 | IndependentPipeline | INFO - Inferred `SequentialPipeline` for `AWQModifier`
+Preparing cache:   0%|          | 0/2 [00:00<?, ?it/s]Preparing cache:  50%|█████     | 1/2 [00:00<00:00,  7.84it/s]Preparing cache: 100%|██████████| 2/2 [00:00<00:00, 13.35it/s]
+(1/2): Calibrating:   0%|          | 0/2 [00:00<?, ?it/s](1/2): Calibrating:  50%|█████     | 1/2 [00:00<00:00,  2.95it/s](1/2): Calibrating: 100%|██████████| 2/2 [00:00<00:00,  5.86it/s]
+Smoothing:   0%|          | 0/3 [00:00<?, ?it/s]Smoothing:  33%|███▎      | 1/3 [00:00<00:00,  4.65it/s]Smoothing: 100%|██████████| 3/3 [00:00<00:00, 12.20it/s]
+(1/2): Propagating:   0%|          | 0/2 [00:00<?, ?it/s](1/2): Propagating: 100%|██████████| 2/2 [00:00<00:00, 877.01it/s]
+(2/2): Calibrating:   0%|          | 0/2 [00:00<?, ?it/s](2/2): Calibrating: 100%|██████████| 2/2 [00:00<00:00, 2283.24it/s]
+Smoothing: 0it [00:00, ?it/s]Smoothing: 0it [00:00, ?it/s]
+(2/2): Propagating:   0%|          | 0/2 [00:00<?, ?it/s](2/2): Propagating: 100%|██████████| 2/2 [00:00<00:00, 5853.88it/s]
+Smoothing: 0it [00:00, ?it/s]Smoothing: 0it [00:00, ?it/s]
+Calibrating weights: 0it [00:00, ?it/s]Calibrating weights: 7it [00:00, 275.96it/s]
+2026-11-17T04:36:47.433728+0300 | finalize | INFO - Compression lifecycle finalized for 1 modifiers
+2026-11-17T04:36:47.435723+0300 | post_process | WARNING - Optimized model is not saved. To save, please provide`output_dir` as input arg.Ex. `oneshot(..., output_dir=...)`
+2026-11-17T04:36:47.436545+0300 | get_model_compressor | INFO - skip_sparsity_compression_stats set to True. Skipping sparsity compression statistic calculations. No sparsity compressor will be applied.
+Compressing model: 0it [00:00, ?it/s]Compressing model: 7it [00:00, 1622.73it/s]
+Traceback (most recent call last):
+  File "/home/mekashirskiy/dl-course-hw7-20261117/.work/quant-smoke.py", line 27, in <module>
+    model.save_pretrained(path, save_compressed=True, safe_serialization=True, max_shard_size='1GB')
+  File "/home/mekashirskiy/dl-course-hw7-20261117/.venv/lib/python3.12/site-packages/llmcompressor/transformers/compression/compressed_tensors_utils.py", line 110, in save_pretrained_wrapper
+    copy_python_files_from_model_cache(model, save_directory)
+  File "/home/mekashirskiy/dl-course-hw7-20261117/.venv/lib/python3.12/site-packages/llmcompressor/pytorch/model_load/helpers.py", line 158, in copy_python_files_from_model_cache
+    config_file_path = hf_hub_download(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/mekashirskiy/dl-course-hw7-20261117/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/mekashirskiy/dl-course-hw7-20261117/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: ''.

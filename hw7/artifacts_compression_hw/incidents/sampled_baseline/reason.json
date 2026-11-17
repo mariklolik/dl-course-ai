@@ -1,0 +1,5 @@
+{
+  "excluded": true,
+  "reason": "Transformers4.55.2 model defaults overrode GenerationConfig do_sample=False to True; original decoding metadata was incorrect; discarded before experiment comparisons",
+  "fix": "use_model_defaults=False in model.generate; regression test reproduces and verifies greedy decoding"
+}
