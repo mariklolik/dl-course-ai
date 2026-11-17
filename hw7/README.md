@@ -1,6 +1,6 @@
 # ДЗ7: квантизация и дистилляция Qwen3
 
-[Отчёт PDF](outputs/report.pdf) · [Исполненный notebook](homework_compression_student.ipynb) · [Таблица](outputs/results.csv) · [Логи](outputs/raw_logs.zip) · [Checkpoint](https://huggingface.co/mariklolik228/dl-course-hw7-compression/tree/a6a6cac40b8e34b03798892199b225e34c685837)
+[Отчёт PDF](outputs/report.pdf) · [Текст отчёта](REPORT.md) · [Исполненный notebook](homework_compression_student.ipynb) · [Таблица](outputs/results.csv) · [Логи](outputs/raw_logs.zip) · [Checkpoint](https://huggingface.co/mariklolik228/dl-course-hw7-compression/tree/a6a6cac40b8e34b03798892199b225e34c685837)
 
 **Лучший ученик: `s1024_e3`, Quality 0.6114 против 0.5823 у Qwen3-32B. Это 104.99% качества учителя; требуемый порог 90% достигнут.** Исходная Qwen3-8B даёт 0.2912. Уже одна эпоха на 1024 ответах проходит порог: Quality 0.6059.
 

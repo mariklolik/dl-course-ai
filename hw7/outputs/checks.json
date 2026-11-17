@@ -15,7 +15,7 @@
   "hub_revision": "a6a6cac40b8e34b03798892199b225e34c685837",
   "zip_crc": "PASS",
   "secret_scan": "PASS",
-  "pdf_visual_qa": "6 pages PASS",
+  "pdf_visual_qa": "2 pages PASS",
   "resources": {
     "resource-GPU-dae34d9f-f1b8-181c-aef6-671bbb69a2e7.jsonl": {
       "events": 8,
@@ -40,7 +40,7 @@
   },
   "source_sha256": {
     ".gitignore": "68cbb7691294af43f467dfb10dcea7df6e607dee0832ef7b8757ba172f37059d",
-    "README.md": "f06d68d064dcf0a05308a9b3569d72788c02326d094f345e1fcc4eaffa8286dc",
+    "README.md": "bf25ce9c76836cbfb97d25558c46f8ca0edbfa13ce432c8ac5071d00a068521c",
     "analyze.py": "66ccfb10b6824d2bf34bb735318edf57112a0d2e0295c65625fd4bdfb8d8ceb2",
     "configs.json": "99cad100bc059b989f510901b6010aa8330f31f6ffae3ae493e6e6d11ed45039",
     "data.py": "a90a04ceefededcd66cff1d04d6d87f6f72b2dda122a9fe502560402ee576a5d",
@@ -48,7 +48,7 @@
     "evaluate.py": "0c908d7c320220070fc8ad3360e57499f341fdca6d5b88418d0a005ebcd20b0e",
     "homework_compression_student.ipynb": "3c7275ad4ca988d053c550659042ad5cee2c582f6d726960e777e695f57f9627",
     "quantize.py": "b1aebede46034064c9751e82ccdc4571f1db1a760c015589e2be77a3d6a2b120",
-    "report.py": "748bc70b534126cd409857ddaa8dd26145dca8b1d68d311c671fcab146f92221",
+    "report.py": "49009cb6c6b39e0f3ee6113c6a8d4254bf9c970b6d8ddf2efbca069c568ac463",
     "requirements-report.txt": "a48b098709c5107ab3df5046544e1b6e4d5bd9dc2dda3718dce02c3e6e8b3f19",
     "requirements.txt": "fa3fdb3119728b89d5729bbb7f125898771ce1430364045f2b4ecfc2787d4bb6",
     "restore_artifacts.py": "58b2c60e6ff93b1598495897bbc47173b2dd454a855879d3511229a1d08533aa",
@@ -57,6 +57,12 @@
     "test_artifacts.py": "97d5fa09f9741408e2c11d73f124275ddfa9846b4ff607badaf8a433d9244ea2",
     "test_quantize.py": "b2783a519350a30f4fc7d7f46bf111d42e747a343782bd2f32b55fd0cd8079d0",
     "test_solution.py": "78ee5c54aac22a4764dd1d5787032a01986fd14ea9d29d98f0b0860e64ed0bc2",
-    "verify_external.py": "15ba23fbd6244e281c856cbf8759bf89704fda4b4ca3a5f3bfb00ddf8137bba7"
+    "verify_external.py": "15ba23fbd6244e281c856cbf8759bf89704fda4b4ca3a5f3bfb00ddf8137bba7",
+    "REPORT.md": "2f316d25894480e642546e044f614a06063cb1ece21cbb917047109c8ec15ffc"
+  },
+  "report_edit": {
+    "kind": "shorter prose only",
+    "metric_table_rows_verified": 17,
+    "hashes_absent_from_pdf": true
   }
 }

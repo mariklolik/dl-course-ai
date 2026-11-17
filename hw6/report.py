@@ -125,30 +125,22 @@ def write_pdf(rows: list[dict]) -> None:
         grid.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#dce8ee')), ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'), ('LINEBELOW', (0, 0), (-1, 0), 0.5, colors.HexColor(BLUE)), ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor('#f3f6f7')]), ('LEFTPADDING', (0, 0), (-1, -1), 5), ('RIGHTPADDING', (0, 0), (-1, -1), 5), ('TOPPADDING', (0, 0), (-1, -1), 3), ('BOTTOMPADDING', (0, 0), (-1, -1), 3)]))
         story.extend([grid, Spacer(1, 10)])
 
-    def figure(path, width=490):
+    def figure(path, width=445):
         with PILImage.open(path) as image:
             w, h = image.size
         story.append(Image(path, width=width, height=width * h / w))
         story.append(Spacer(1, 8))
 
-    fixed = [r for r in rows if r['group'] == 'fixed' and r['complete'] == 'True' and int(r['failed']) == 0]
-    baseline = next(r for r in fixed if r['config'] == 'baseline')
-    best = min(fixed, key=lambda r: r['mean_s'])
-    text('ДЗ6: ускорение инференса', 'title')
-    text('Одна H100 80GB, Qwen/Qwen3-8B в BF16. Исходные 640 запросов, temperature=0, seed=42, max_tokens=512, thinking выключен. Замер через AIPerf 0.13.0 при 120 RPM.')
-    text('vLLM 0.22.0 запущен нативно: Python 3.12.14, Torch 2.11.0 / CUDA 13.0. Это отличается от исходного cu129-образа: Docker socket недоступен пользователю. Все сравнения выполнены в одном окружении на одной GPU.')
-    table([['Конфигурация', 'Mean, с', 'P90, с', 'S', 'Токенов', 'Acceptance, %']] + [[r['config'], f"{r['mean_s']:.3f}", f"{r['p90_s']:.3f}", f"{baseline['mean_s'] / r['mean_s']:.3f}", f"{float(r['mean_output_tokens']):.2f}", f"{100 * float(r['spec_acceptance_rate']):.1f}" if r['spec_acceptance_rate'] else '-'] for r in fixed], [148, 56, 56, 50, 75, 120])
-    figure('outputs/configurations.png', 460)
-    text(f"Лучший из проверенных: {best['config']}, Mean {best['mean_s']:.3f} с, ускорение {baseline['mean_s'] / best['mean_s']:.3f}. Во всех строках 640 успешных запросов без ошибок. В таблице опорные прогоны; контрольные повторы приведены отдельно.")
-    source = Path('README.md').read_text().split('![Сравнение конфигураций](outputs/configurations.png)', 1)[1]
-    lines = ['## Что дали настройки', *source.splitlines()]
+    lines = Path('REPORT.md').read_text().splitlines()
     i = 0
     while i < len(lines):
         line = lines[i].strip()
         i += 1
         if not line:
             continue
-        if line.startswith('## '):
+        if line.startswith('# '):
+            text(line[2:], 'title')
+        elif line.startswith('## '):
             story.append(PageBreak())
             text(line[3:], 'heading')
         elif line.startswith('### '):

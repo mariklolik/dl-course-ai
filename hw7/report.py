@@ -40,7 +40,7 @@ def main() -> None:
         ]))
         story.extend([grid, Spacer(1, 10)])
 
-    lines = Path('README.md').read_text().splitlines()
+    lines = Path('REPORT.md').read_text().splitlines()
     i = 0
     while i < len(lines):
         line = lines[i].strip()

@@ -1,6 +1,6 @@
 # ДЗ6: ускорение инференса
 
-[Отчёт PDF](outputs/report.pdf) · [Полная таблица](outputs/results.csv) · [Основные замеры](outputs/raw_results.zip) · [Нагрузочные замеры](outputs/raw_load_results.zip)
+[Отчёт PDF](outputs/report.pdf) · [Текст отчёта](REPORT.md) · [Полная таблица](outputs/results.csv) · [Основные замеры](outputs/raw_results.zip) · [Нагрузочные замеры](outputs/raw_load_results.zip)
 
 <details>
 <summary>Пересчитать CSV из двух архивов</summary>
@@ -138,7 +138,7 @@ Effective P90 считается от выдачи credit, обычный reques
 
 AIPerf предупреждал о сбросе CPU-счётчика. В исходном baseline `process_start_time_seconds` стабилен (1794864569.21), PID сервера не менялся; перезапуска внутри замера не было. CPU-счётчик не используется для расчёта request latency; Mean/P90 сверены с индивидуальными записями. Причина предупреждения отдельно не устанавливалась.
 
-SHA256 данных: `67c48379e5ae2608f7ca08650fd346facdc01f766a3e8eecea6459d7cec00ebc`. Исходный Dockerfile и requests.jsonl совпадают с архивом. Версии пакетов, UUID GPU, revisions и SHA256 файлов весов находятся в `environment.json`, `model_manifest.json` и freeze-файлах в двух архивах исходных замеров. Там же полные JSONL, тексты ответов, метрики сервера, telemetry, журналы и orchestration-скрипты. `results.csv` содержит проверки подачи, длины ответов, их хеши и acceptance по серверным счётчикам profiling-фазы.
+Исходный Dockerfile и requests.jsonl совпадают с архивом. Окружение, версии весов и полные логи находятся в двух архивах исходных замеров.
 
 ### Воспроизведение
 
