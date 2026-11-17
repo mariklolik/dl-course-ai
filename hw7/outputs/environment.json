@@ -1,0 +1,16 @@
+{
+  "host": "avi-gn-fsk34",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "torch": "2.8.0+cu128",
+  "torch_cuda": "12.8",
+  "packages": {
+    "transformers": "4.55.2",
+    "datasets": "4.1.1",
+    "accelerate": "1.10.1",
+    "llmcompressor": "0.8.1",
+    "compressed-tensors": "0.12.2",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "huggingface-hub": "0.34.3"
+  }
+}

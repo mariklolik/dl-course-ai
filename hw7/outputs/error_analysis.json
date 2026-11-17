@@ -1,0 +1,125 @@
+{
+  "counts": {
+    "awq_massive": {
+      "extra_closing_brace": 88,
+      "wrong_slots": 72,
+      "wrong_intent": 42,
+      "exact": 31,
+      "invalid_schema": 19,
+      "invalid_json": 4
+    },
+    "awq_wikitext": {
+      "extra_closing_brace": 38,
+      "wrong_slots": 104,
+      "wrong_intent": 51,
+      "exact": 33,
+      "invalid_schema": 25,
+      "invalid_json": 5
+    },
+    "baseline": {
+      "extra_closing_brace": 107,
+      "wrong_slots": 70,
+      "wrong_intent": 38,
+      "exact": 28,
+      "invalid_schema": 10,
+      "invalid_json": 3
+    },
+    "gptq_g128": {
+      "extra_closing_brace": 29,
+      "exact": 37,
+      "wrong_intent": 55,
+      "wrong_slots": 114,
+      "invalid_schema": 21
+    },
+    "gptq_g64": {
+      "extra_closing_brace": 68,
+      "exact": 38,
+      "wrong_intent": 32,
+      "wrong_slots": 86,
+      "invalid_json": 21,
+      "invalid_schema": 11
+    },
+    "gptq_lastbf16": {
+      "extra_closing_brace": 29,
+      "exact": 40,
+      "wrong_intent": 55,
+      "wrong_slots": 113,
+      "invalid_schema": 19
+    },
+    "gptq_n64": {
+      "extra_closing_brace": 24,
+      "exact": 26,
+      "wrong_intent": 51,
+      "invalid_json": 43,
+      "wrong_slots": 91,
+      "invalid_schema": 21
+    },
+    "s1024": {
+      "wrong_slots": 113,
+      "exact": 87,
+      "wrong_intent": 51,
+      "invalid_schema": 4,
+      "extra_closing_brace": 1
+    },
+    "s1024_e3": {
+      "wrong_slots": 115,
+      "exact": 87,
+      "wrong_intent": 48,
+      "invalid_schema": 6
+    },
+    "s128": {
+      "wrong_slots": 149,
+      "invalid_schema": 13,
+      "wrong_intent": 66,
+      "exact": 27,
+      "invalid_json": 1
+    },
+    "sq_a05": {
+      "extra_closing_brace": 65,
+      "exact": 36,
+      "wrong_intent": 43,
+      "wrong_slots": 101,
+      "invalid_json": 4,
+      "invalid_schema": 7
+    },
+    "sq_a08": {
+      "extra_closing_brace": 121,
+      "exact": 26,
+      "wrong_intent": 31,
+      "invalid_schema": 9,
+      "wrong_slots": 64,
+      "invalid_json": 5
+    },
+    "teacher": {
+      "wrong_slots": 120,
+      "exact": 81,
+      "wrong_intent": 49,
+      "invalid_json": 1,
+      "invalid_schema": 5
+    }
+  },
+  "examples": [
+    {
+      "id": "5021",
+      "text": "мне нравится r n b",
+      "gold": "{\"intent\":\"music_likeness\",\"slots\":[[\"music_genre\",\"r n b\"]]}",
+      "kind": "format_fixed",
+      "predictions": {
+        "baseline": "{\"intent\":\"music_likeness\",\"slots\":[[\"music_genre\",\"r n b\"]]}}",
+        "teacher": "{\"intent\":\"music_likeness\",\"slots\":[[\"music_genre\",\"r n b\"]]}",
+        "s1024_e3": "{\"intent\":\"music_likeness\",\"slots\":[[\"music_genre\",\"r n b\"]]}"
+      }
+    },
+    {
+      "id": "11061",
+      "text": "пожалуйста добавь васю в список контактов",
+      "gold": "{\"intent\":\"email_addcontact\",\"slots\":[[\"person\",\"васю\"]]}",
+      "kind": "slot_error",
+      "predictions": {
+        "baseline": "{\"intent\":\"email_addcontact\",\"slots\":[[\"email_address\",\"вася\"]]}}",
+        "teacher": "{\"intent\":\"email_addcontact\",\"slots\":[[\"person\",\"вася\"]]}",
+        "s1024_e3": "{\"intent\":\"email_addcontact\",\"slots\":[[\"person\",\"вася\"]]}"
+      }
+    }
+  ]
+}

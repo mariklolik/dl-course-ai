@@ -1,0 +1,8 @@
+{
+  "runs": 13,
+  "verified_dev_predictions": 3328,
+  "best_student": "s1024_e3",
+  "student_teacher_ratio": 1.0499449921357042,
+  "student_above_baseline": true,
+  "target_reached": true
+}

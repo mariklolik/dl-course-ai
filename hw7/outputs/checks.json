@@ -1,0 +1,62 @@
+{
+  "tests": 21,
+  "tests_passed": true,
+  "code_no_comments_docstrings": true,
+  "code_max_lines": 247,
+  "notebook_sha256": "3c7275ad4ca988d053c550659042ad5cee2c582f6d726960e777e695f57f9627",
+  "notebook_code_cells": 23,
+  "notebook_errors": 0,
+  "notebook_figures_match": true,
+  "main_dev_runs": 13,
+  "main_dev_predictions": 3328,
+  "external_student_predictions_equal": 256,
+  "public_model_files": 189,
+  "public_model_bytes": 72225999750,
+  "hub_revision": "a6a6cac40b8e34b03798892199b225e34c685837",
+  "zip_crc": "PASS",
+  "secret_scan": "PASS",
+  "pdf_visual_qa": "6 pages PASS",
+  "resources": {
+    "resource-GPU-dae34d9f-f1b8-181c-aef6-671bbb69a2e7.jsonl": {
+      "events": 8,
+      "last_exit_code": 0,
+      "released": true
+    },
+    "resource-GPU-261a5730-15f4-f59a-56c5-4db4cfc8dddb.jsonl": {
+      "events": 6,
+      "last_exit_code": 0,
+      "released": true
+    },
+    "resource-GPU-0a0fb059-21c9-b4b7-45f9-6202b1cbd9f7.jsonl": {
+      "events": 2,
+      "last_exit_code": 1,
+      "released": true
+    },
+    "resource-GPU-8aef53e7-9001-fd88-b064-b96ac6ca310f.jsonl": {
+      "events": 2,
+      "last_exit_code": 0,
+      "released": true
+    }
+  },
+  "source_sha256": {
+    ".gitignore": "68cbb7691294af43f467dfb10dcea7df6e607dee0832ef7b8757ba172f37059d",
+    "README.md": "f06d68d064dcf0a05308a9b3569d72788c02326d094f345e1fcc4eaffa8286dc",
+    "analyze.py": "66ccfb10b6824d2bf34bb735318edf57112a0d2e0295c65625fd4bdfb8d8ceb2",
+    "configs.json": "99cad100bc059b989f510901b6010aa8330f31f6ffae3ae493e6e6d11ed45039",
+    "data.py": "a90a04ceefededcd66cff1d04d6d87f6f72b2dda122a9fe502560402ee576a5d",
+    "distill.py": "0738920f10fb18157259c75b2d040a1ae8b1ce09734a8e62d92c08fda4cedcb3",
+    "evaluate.py": "0c908d7c320220070fc8ad3360e57499f341fdca6d5b88418d0a005ebcd20b0e",
+    "homework_compression_student.ipynb": "3c7275ad4ca988d053c550659042ad5cee2c582f6d726960e777e695f57f9627",
+    "quantize.py": "b1aebede46034064c9751e82ccdc4571f1db1a760c015589e2be77a3d6a2b120",
+    "report.py": "748bc70b534126cd409857ddaa8dd26145dca8b1d68d311c671fcab146f92221",
+    "requirements-report.txt": "a48b098709c5107ab3df5046544e1b6e4d5bd9dc2dda3718dce02c3e6e8b3f19",
+    "requirements.txt": "fa3fdb3119728b89d5729bbb7f125898771ce1430364045f2b4ecfc2787d4bb6",
+    "restore_artifacts.py": "58b2c60e6ff93b1598495897bbc47173b2dd454a855879d3511229a1d08533aa",
+    "run_all.sh": "208cc3ade299f40f9dc36663426a2d2aab8da48458b4e19947f8db4ed78c3449",
+    "test_analysis.py": "a608f28a0fe6f0b23efffe847b62b651e562a55b458354b261605f1071ecb543",
+    "test_artifacts.py": "97d5fa09f9741408e2c11d73f124275ddfa9846b4ff607badaf8a433d9244ea2",
+    "test_quantize.py": "b2783a519350a30f4fc7d7f46bf111d42e747a343782bd2f32b55fd0cd8079d0",
+    "test_solution.py": "78ee5c54aac22a4764dd1d5787032a01986fd14ea9d29d98f0b0860e64ed0bc2",
+    "verify_external.py": "15ba23fbd6244e281c856cbf8759bf89704fda4b4ca3a5f3bfb00ddf8137bba7"
+  }
+}
