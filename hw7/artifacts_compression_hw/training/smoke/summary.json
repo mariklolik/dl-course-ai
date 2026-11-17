@@ -1,0 +1,71 @@
+{
+  "samples": 128,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "run": "s128",
+  "smoke": true,
+  "trainable_parameters": 8190735360,
+  "total_parameters": 8190735360,
+  "seconds": 4.76867391820997,
+  "peak_allocated_bytes": 68095740416,
+  "peak_reserved_bytes": 68969037824,
+  "gpu_uuid": "8aef53e7-9001-fd88-b064-b96ac6ca310f",
+  "planned_tokens": 8541,
+  "target_tokens": 436,
+  "optimizer_defaults": {
+    "lr": 2e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": false,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": true
+  },
+  "batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "gradient_checkpointing": true,
+  "warmup_ratio": 0.0,
+  "scheduler": "cosine",
+  "max_grad_norm": 1.0,
+  "examples": 16,
+  "filtered": 0,
+  "steps": 1,
+  "tracked_weight_max_abs_delta": 3.0517578125e-05,
+  "label_source": "MASSIVE train gold, hardware smoke only",
+  "answers_sha256": "5b0a9a3bc781870f3ce316c48c74b2a8bf52ce77bc16e81bc88096b162024fc5",
+  "selected_ids_sha256": "7089ceb91563e924d3dc47048cab5a0214841f13b43a9de9c02f4427a5ccd81c",
+  "sequence_tokens_min": 529,
+  "sequence_tokens_max": 546,
+  "prompt_tokens_max": 511,
+  "answer_tokens_max": 36,
+  "train_metrics": {
+    "train_runtime": 4.5426,
+    "train_samples_per_second": 3.522,
+    "train_steps_per_second": 0.22,
+    "total_flos": 387850508457984.0,
+    "train_loss": 0.6540794372558594,
+    "epoch": 1.0
+  },
+  "optimizer": {
+    "gradient_dtypes": {
+      "torch.bfloat16": 399
+    },
+    "optimizer_state_dtypes": {
+      "torch.float32": 399,
+      "torch.bfloat16": 798
+    },
+    "foreach": false,
+    "parameter_dtypes": {
+      "torch.bfloat16": 399
+    },
+    "optimizer_states": 399
+  },
+  "base_revision": "b968826d9c46dd6066d109eabc6255188de91218"
+}

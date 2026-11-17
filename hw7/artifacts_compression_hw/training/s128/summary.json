@@ -1,0 +1,72 @@
+{
+  "samples": 128,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "run": "s128",
+  "smoke": false,
+  "trainable_parameters": 8190735360,
+  "total_parameters": 8190735360,
+  "seconds": 32.59375942591578,
+  "peak_allocated_bytes": 68093208064,
+  "peak_reserved_bytes": 70183288832,
+  "gpu_uuid": "dae34d9f-f1b8-181c-aef6-671bbb69a2e7",
+  "planned_tokens": 67173,
+  "target_tokens": 2699,
+  "optimizer_defaults": {
+    "lr": 2e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "amsgrad": false,
+    "maximize": false,
+    "foreach": false,
+    "capturable": false,
+    "differentiable": false,
+    "fused": null,
+    "decoupled_weight_decay": true
+  },
+  "batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "gradient_checkpointing": true,
+  "warmup_ratio": 0.05,
+  "scheduler": "cosine",
+  "max_grad_norm": 1.0,
+  "examples": 128,
+  "filtered": 0,
+  "steps": 8,
+  "tracked_weight_max_abs_delta": 9.1552734375e-05,
+  "label_source": "Qwen3-32B greedy answers",
+  "answers_sha256": "911b3ff67d9ccbd77955f2a7912ce8108cfbdc1a4d92b0967685703f7fb9d7d6",
+  "selected_ids_sha256": "f0db3a8b0192855b6be19a2e8992e6c8e18861a5dd2587fb1932f35a7c3262a9",
+  "sequence_tokens_min": 504,
+  "sequence_tokens_max": 570,
+  "prompt_tokens_max": 522,
+  "answer_tokens_max": 48,
+  "train_metrics": {
+    "train_runtime": 32.3794,
+    "train_samples_per_second": 3.953,
+    "train_steps_per_second": 0.247,
+    "total_flos": 3050355017521152.0,
+    "train_loss": 0.42613630555570126,
+    "epoch": 1.0
+  },
+  "optimizer": {
+    "gradient_dtypes": {
+      "torch.bfloat16": 399
+    },
+    "optimizer_state_dtypes": {
+      "torch.float32": 399,
+      "torch.bfloat16": 798
+    },
+    "foreach": false,
+    "parameter_dtypes": {
+      "torch.bfloat16": 399
+    },
+    "optimizer_states": 399
+  },
+  "base_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "checkpoint": "artifacts_compression_hw/students/s128"
+}
